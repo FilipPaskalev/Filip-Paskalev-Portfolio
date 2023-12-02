@@ -1,7 +1,57 @@
-# Portfolio
-The repository contains an assignment (to build a portfolio according to set parameters) and is part of the University of Birmingham Skills Bootcamp in Front-End Web Development &amp; UX 2023.
+# Portfolio project
+
+The repository contains an assignment (to build a portfolio according to set parameters) and is part of the University of Birmingham Skills BootCamp in Front-End Web Development &amp; UX 2023.
+
+## Table of Contents
+
+- [Portfolio project](#portfolio-project)
+  - [Table of Contents](#table-of-contents)
+  - [Description](#description)
+    - [User story](#user-story)
+    - [Mock-up](#mock-up)
+  - [Project tasks](#project-tasks)
+  - [Installation](#installation)
+    - [Option 1](#option-1)
+    - [Option 2](#option-2)
+  - [Features](#features)
+  - [Credits](#credits)
+  - [License](#license)
+
+
+## Description
+
+### User story
+
+### Mock-up
+
+## Project tasks
+
+## Installation
+
+### Option 1
+
+<!-- To set correct link to project -->
+1. Clone the project from [GitHub](https://github.com/FilipPaskalev/horiseon.git) on your local machine .
+2. Unzip the project.
+3. Open project with VS Code or other IDE.
+
+### Option 2
+
+<!-- To set correct link to project -->
+You can find deployed version of the project on [Here](https://filippaskalev.github.io/horiseon/).
+
+## Features
+
+<!-- #### Extra mile -->
+
+<!-- ## Tests -->
+
+<!-- ## Contributing -->
+
+<!-- ## Badges -->
 
 ## Credits
+
 - [Google - normalize CSS](https://blog.hubspot.com/website/normalize-css)
 - [Google - Reset CSS](https://www.webfx.com/blog/web-design/css-tip-1-resetting-your-styles-with-css-reset/)
 - [Mozilla - CSS](https://developer.mozilla.org/en-US/docs/MDN/Writing_guidelines/Writing_style_guide/Code_style_guide/CSS)
