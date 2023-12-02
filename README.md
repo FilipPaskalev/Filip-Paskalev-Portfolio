@@ -9,16 +9,19 @@ The repository contains an assignment (to build a portfolio according to set par
   - [Description](#description)
   - [Usage](#usage)
     - [User story](#user-story)
-    - [Mock-up](#mock-up)
   - [Project tasks](#project-tasks)
-  - [Installation](#installation)
-    - [Option 1](#option-1)
-    - [Option 2](#option-2)
-  - [Visual](#visual)
+    - [Mock-up](#mock-up)
+    - [Acceptance Criteria](#acceptance-criteria)
   - [Features](#features)
   - [Tests](#tests)
   - [Support](#support)
   - [Roadmap](#roadmap)
+  - [Installation](#installation)
+    - [Option 1 - Download](#option-1---download)
+    - [Option 1 - Clone project](#option-1---clone-project)
+  - [Demo](#demo)
+    - [Preview](#preview)
+    - [Live demo](#live-demo)
   - [Contributing](#contributing)
     - [Credits](#credits)
     - [Badges](#badges)
@@ -36,27 +39,24 @@ The repository contains an assignment (to build a portfolio according to set par
 
 ### User story
 
-### Mock-up
-
 ## Project tasks
 
-## Installation
+### Mock-up
 
-### Option 1
+The following animation shows the web application's appearance and functionality:
 
-<!-- To set correct link to project -->
-1. Clone the project from [GitHub](https://github.com/FilipPaskalev/horiseon.git) on your local machine .
-2. Unzip the project.
-3. Open project with VS Code or other IDE.
+![portfolio demo](./images/01-css-challenge-demo.gif)
 
-### Option 2
+### Acceptance Criteria
 
-<!-- To set correct link to project -->
-You can find deployed version of the project on [Here](https://filippaskalev.github.io/horiseon/).
+Here are the critical requirements necessary to develop a portfolio that satisfies a typical hiring manager’s needs:
 
-## Visual
-
-<!-- Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like [ttygif](https://github.com/icholy/ttygif) can help, but check out [Asciinema](https://asciinema.org/) for a more sophisticated method. -->
+- When the page is loaded the page presents your name, a recent photo or avatar, and links to sections about you, your work, and how to contact you
+- When one of the links in the navigation is clicked then the UI scrolls to the corresponding section
+- When viewing the section about your work then the section contains titled images of your applications
+- When presented with the your first application then that application's image should be larger in size than the others
+ -When images of the applications are clicked then the user is taken to that deployed application
+- When the page is resized or viewed on various screens and devices then the layout is responsive and adapts to my viewport
 
 ## Features
 
@@ -69,6 +69,30 @@ You can find deployed version of the project on [Here](https://filippaskalev.git
 ## Roadmap
 
 <!-- If you have ideas for releases in the future, it is a good idea to list them in the README. -->
+
+## Installation
+
+### Option 1 - Download
+
+<!-- To set correct link to project -->
+1. Download the project from [GitHub](https://github.com/FilipPaskalev/horiseon.git) on your local machine .
+2. Unzip the project.
+3. Open project with VS Code or other IDE.
+
+### Option 1 - Clone project
+
+<!-- TODO with GitHub commands -->
+
+## Demo
+
+### Preview
+
+![portfolio demo](./images/01-css-challenge-demo.gif)
+
+### Live demo
+
+<!-- To set correct link to project -->
+You can find deployed version of the project on [Here](https://filippaskalev.github.io/horiseon/).
 
 ## Contributing
 
@@ -90,10 +114,33 @@ You can also document commands to lint the code or run tests. These steps help t
 - [Mozilla - Meta tags](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta)
 - [Medium - how to make perfect README.md on GitHub](https://medium.com/swlh/how-to-make-the-perfect-readme-md-on-github-92ed5771c061)
 - [Make a readme](https://www.makeareadme.com/)
+- [Readme.so tool](https://readme.so/editor)
 
 ### Badges
 
 <!-- On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge. -->
+
+![Endpoint Badge](https://img.shields.io/badge/W3Schools-04AA6D?style=for-the-badge&logo=W3Schools&logoColor=white)
+![Endpoint Badge](https://img.shields.io/badge/MDN_Web_Docs-black?style=for-the-badge&logo=mdnwebdocs&logoColor=white)
+![Endpoint Badge](https://img.shields.io/badge/GitHub%20Pages-222222?style=for-the-badge&logo=GitHub%20Pages&logoColor=white)
+![Endpoint Badge](	https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white)
+![Endpoint Badge](https://img.shields.io/badge/VSCode-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
+![Endpoint Badge](	https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![Endpoint Badge](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![Endpoint Badge](https://img.shields.io/badge/prettier-1A2C34?style=for-the-badge&logo=prettier&logoColor=F7BA3E)
+![Endpoint Badge](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
+![Endpoint Badge](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)
+
+
+![Static Badge](https://img.shields.io/badge/HTML-somelabel)
+![Static Badge](https://img.shields.io/badge/CSS-somelabel-black)
+![Static Badge](https://img.shields.io/badge/Git-somelabel-black)
+![Static Badge](https://img.shields.io/badge/GitHub-somelabel-black)
+![Static Badge](https://img.shields.io/badge/University_of_Birmingham-somelabel-black)
+![Static Badge](https://img.shields.io/badge/text_one-somelabel-black)
+![Static Badge](https://img.shields.io/badge/text_one-somelabel-black)
+![Static Badge](https://img.shields.io/badge/text_one-somelabel-black)
+![Static Badge](https://img.shields.io/badge/text_one-somelabel-black)
 
 ### Authors and acknowledgment
 

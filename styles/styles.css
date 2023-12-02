@@ -1,4 +1,38 @@
-/* Default CSS layout for narrow screens */
+/* 
+==========================================================================
+Global styles
+========================================================================== 
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+/*
+==========================================================================
+Default CSS layout for narrow screens 
+========================================================================== 
+*/
 
 @media (min-width: 480px) {
   /* CSS for medium width screens */
