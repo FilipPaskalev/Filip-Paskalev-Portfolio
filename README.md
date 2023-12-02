@@ -1,6 +1,16 @@
 # Portfolio
 The repository contains an assignment (to build a portfolio according to set parameters) and is part of the University of Birmingham Skills Bootcamp in Front-End Web Development &amp; UX 2023.
 
+## Credits
+- [](https://blog.hubspot.com/website/normalize-css)
+- [Webfx - Resset CSS](https://www.webfx.com/blog/web-design/css-tip-1-resetting-your-styles-with-css-reset/)
+- [Mozilla -](https://developer.mozilla.org/en-US/docs/MDN/Writing_guidelines/Writing_style_guide/Code_style_guide/CSS)
+- [w3school - CSS](https://www.w3schools.com/css)
+- [w3school - HTML](https://www.w3schools.com/html)
+- [w3school - SEO](https://developers.google.com/search/docs/crawling-indexing/special-tags)
+- [w3school - Meta tags](https://www.w3schools.com/tags/tag_meta.asp)
+- [Mozilla - Meta tags](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta)
+
 ## License
 MIT License
 
