@@ -47,6 +47,7 @@ The repository contains an assignment (to build a portfolio according to set par
 
 [Toptal - Responsive Web Design Media Query Examples Explained](https://www.toptal.com/responsive-web/introduction-to-responsive-web-design-pseudo-elements-media-queries)
 
+[Mdn web docs - CSS properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)
 
 ## Usage
 

@@ -30,6 +30,23 @@ p {
 
 /* 
 ==========================================================================
+Global variables
+========================================================================== 
+*/
+
+/* Color palette */
+:root {
+  --navigation-primary-bg-color: #31343D;
+  --navigation-primary-text-color: ##92CCCD;
+  --hero-primary-text-color: #31343D;
+  --primary-title-text-color: #445876;
+  --hover-link-color: #435877;
+  --hover-element-color: #91CCCD;
+  --secondary-title-text-color: #31333E;
+}
+
+/* 
+==========================================================================
 Header section
 ========================================================================== 
 */
