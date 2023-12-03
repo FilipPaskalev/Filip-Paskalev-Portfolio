@@ -12,12 +12,12 @@ The repository contains an assignment (to build a portfolio according to set par
   - [Usage](#usage)
     - [User story](#user-story)
   - [Project tasks](#project-tasks)
-    - [Acceptance Criteria](#acceptance-criteria)
+    - [Acceptance Criteria and requirements](#acceptance-criteria-and-requirements)
     - [Mock-up](#mock-up)
     - [Technical Acceptance Criteria](#technical-acceptance-criteria)
-    - [Deployment](#deployment)
-    - [Application Quality](#application-quality)
-    - [Repository Quality](#repository-quality)
+      - [Deployment](#deployment)
+      - [Application Quality](#application-quality)
+      - [Repository Quality](#repository-quality)
   - [Features](#features)
   - [Tests](#tests)
   - [Support](#support)
@@ -43,7 +43,10 @@ The repository contains an assignment (to build a portfolio according to set par
 
 #### Media queries researched resources
 
-[StackOverflow](https://stackoverflow.com/questions/12045893/which-are-the-most-important-media-queries-to-use-in-creating-mobile-responsive)
+[StackOverflow - Most common media queries](https://stackoverflow.com/questions/12045893/which-are-the-most-important-media-queries-to-use-in-creating-mobile-responsive)
+
+[Toptal - Responsive Web Design Media Query Examples Explained](https://www.toptal.com/responsive-web/introduction-to-responsive-web-design-pseudo-elements-media-queries)
+
 
 ## Usage
 
@@ -53,7 +56,7 @@ The repository contains an assignment (to build a portfolio according to set par
 
 ## Project tasks
 
-### Acceptance Criteria
+### Acceptance Criteria and requirements
 
 Here are the critical requirements necessary to develop a portfolio that satisfies a typical hiring manager’s needs:
 
@@ -72,7 +75,7 @@ The following animation shows the web application's appearance and functionality
 
 ### Technical Acceptance Criteria
 
-### Deployment
+#### Deployment
 
 - Application deployed at live URL.
 
@@ -82,11 +85,11 @@ The following animation shows the web application's appearance and functionality
 
 - GitHub repository contains application code.
 
-### Application Quality
+#### Application Quality
 
 - Application resembles the mock-up functionality provided in the challenge instructions.
 
-### Repository Quality
+#### Repository Quality
 
 - Repository has a unique name.
 
