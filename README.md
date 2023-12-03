@@ -1,6 +1,6 @@
 # Portfolio project
 
-The repository contains an assignment (to build a portfolio according to set parameters) and is part of the University of Birmingham Skills BootCamp in Front-End Web Development &amp; UX 2023.
+The repository contains an assignment (to build a portfolio according to set parameters) and is part of the University of Birmingham Skills BootCamp in  Front-End Web Development &amp; UX 2023.
 
 ## Table of Contents
 
@@ -10,15 +10,19 @@ The repository contains an assignment (to build a portfolio according to set par
   - [Usage](#usage)
     - [User story](#user-story)
   - [Project tasks](#project-tasks)
-    - [Mock-up](#mock-up)
     - [Acceptance Criteria](#acceptance-criteria)
+    - [Mock-up](#mock-up)
+    - [Technical Acceptance Criteria](#technical-acceptance-criteria)
+    - [Deployment](#deployment)
+    - [Application Quality](#application-quality)
+    - [Repository Quality](#repository-quality)
   - [Features](#features)
   - [Tests](#tests)
   - [Support](#support)
   - [Roadmap](#roadmap)
   - [Installation](#installation)
     - [Option 1 - Download](#option-1---download)
-    - [Option 1 - Clone project](#option-1---clone-project)
+    - [Option 1 - Clone project from GitHuB](#option-1---clone-project-from-github)
   - [Demo](#demo)
     - [Preview](#preview)
     - [Live demo](#live-demo)
@@ -41,22 +45,50 @@ The repository contains an assignment (to build a portfolio according to set par
 
 ## Project tasks
 
+### Acceptance Criteria
+
+Here are the critical requirements necessary to develop a portfolio that satisfies a typical hiring manager’s needs:
+
+- When the page is loaded the page presents your name, a recent photo or avatar, and links to sections about you, your work, and how to contact you.
+- When one of the links in the navigation is clicked then the UI scrolls to the corresponding section.
+- When viewing the section about your work then the section contains titled images of your applications.
+- When presented with the your first application then that application's image should be larger in size than the others.
+- When images of the applications are clicked then the user is taken to that deployed application.
+- When the page is resized or viewed on various screens and devices then the layout is responsive and adapts to my viewport.
+
 ### Mock-up
 
 The following animation shows the web application's appearance and functionality:
 
 ![portfolio demo](./images/01-css-challenge-demo.gif)
 
-### Acceptance Criteria
+### Technical Acceptance Criteria
 
-Here are the critical requirements necessary to develop a portfolio that satisfies a typical hiring manager’s needs:
+### Deployment
 
-- When the page is loaded the page presents your name, a recent photo or avatar, and links to sections about you, your work, and how to contact you
-- When one of the links in the navigation is clicked then the UI scrolls to the corresponding section
-- When viewing the section about your work then the section contains titled images of your applications
-- When presented with the your first application then that application's image should be larger in size than the others
- -When images of the applications are clicked then the user is taken to that deployed application
-- When the page is resized or viewed on various screens and devices then the layout is responsive and adapts to my viewport
+- Application deployed at live URL.
+
+- Application loads with no errors.
+
+- Application GitHub URL submitted.
+
+- GitHub repository contains application code.
+
+### Application Quality
+
+- Application resembles the mock-up functionality provided in the challenge instructions.
+
+### Repository Quality
+
+- Repository has a unique name.
+
+- Repository follows best practices for file structure and naming conventions.
+
+- Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
+
+- Repository contains multiple descriptive commit messages.
+
+- Repository contains quality readme with description, screenshot, link to deployed application.
 
 ## Features
 
@@ -75,11 +107,11 @@ Here are the critical requirements necessary to develop a portfolio that satisfi
 ### Option 1 - Download
 
 <!-- To set correct link to project -->
-1. Download the project from [GitHub](https://github.com/FilipPaskalev/horiseon.git) on your local machine .
+1. Download the project from [GitHub repository](https://github.com/FilipPaskalev/horiseon.git) on your local machine.
 2. Unzip the project.
 3. Open project with VS Code or other IDE.
 
-### Option 1 - Clone project
+### Option 1 - Clone project from [GitHuB](https://github.com/)
 
 <!-- TODO with GitHub commands -->
 
@@ -173,3 +205,6 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+---
+© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
