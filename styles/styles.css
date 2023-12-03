@@ -34,8 +34,8 @@ Global variables
 ========================================================================== 
 */
 
-/* Color palette */
 :root {
+  /* Color palette */
   --navigation-primary-bg-color: #31343D;
   --navigation-primary-text-color: ##92CCCD;
   --hero-primary-text-color: #31343D;
