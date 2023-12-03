@@ -7,6 +7,8 @@ The repository contains an assignment (to build a portfolio according to set par
 - [Portfolio project](#portfolio-project)
   - [Table of Contents](#table-of-contents)
   - [Description](#description)
+    - [Research](#research)
+      - [Media queries researched resources](#media-queries-researched-resources)
   - [Usage](#usage)
     - [User story](#user-story)
   - [Project tasks](#project-tasks)
@@ -37,6 +39,12 @@ The repository contains an assignment (to build a portfolio according to set par
 
 <!-- Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors. -->
 
+### Research
+
+#### Media queries researched resources
+
+[StackOverflow](https://stackoverflow.com/questions/12045893/which-are-the-most-important-media-queries-to-use-in-creating-mobile-responsive)
+
 ## Usage
 
 <!-- Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README. -->
@@ -60,7 +68,7 @@ Here are the critical requirements necessary to develop a portfolio that satisfi
 
 The following animation shows the web application's appearance and functionality:
 
-![portfolio demo](./images/01-css-challenge-demo.gif)
+![portfolio demo](./assest/mock-up/mock-up-demo.gif)
 
 ### Technical Acceptance Criteria
 
