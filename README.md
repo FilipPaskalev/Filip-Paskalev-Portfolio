@@ -147,6 +147,7 @@ You can also document commands to lint the code or run tests. These steps help t
 - [Medium - how to make perfect README.md on GitHub](https://medium.com/swlh/how-to-make-the-perfect-readme-md-on-github-92ed5771c061)
 - [Make a readme](https://www.makeareadme.com/)
 - [Readme.so tool](https://readme.so/editor)
+- [Ezgif gif editing tool](https://ezgif.com/)
 
 ### Badges
 
