@@ -7,18 +7,17 @@ Global variables
 :root {
   /* Main color palette */
   --page-primary-bg-color: #EDEDF6;
+
   /* Header color palette */
-  --header-primary-text-color: #31343D;
+  --header-primary-bg-color: #31343D;
+  --header-secondary-bg-color: #92CCCD;
+
   /* Navigation color palette */
-  --nav-primary-bg-color: #31343D;
-  --nav-primary-text-color: #92CCCD;
+  --nav-links-color: #92CCCD;
+
   /* Hero section color palette */
   --hero-primary-text-color: #31343D;
-
-  --primary-title-text-color: #445876;
-  --hover-link-color: #435877;
-  --hover-element-color: #91CCCD;
-  --secondary-title-text-color: #31333E;
+  --hero-text-container-bg-color: #92CCCD;
 }
 
 /* 
@@ -59,11 +58,11 @@ Header section
 */
 
 header {
-  background-color: var();
+  background-color: var(--header-primary-bg-color);
 }
 
 header span {
-  background-color: var();
+  background-color: var(--header-secondary-bg-color);
 }
 
 /* 
