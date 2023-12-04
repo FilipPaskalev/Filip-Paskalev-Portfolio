@@ -70,10 +70,16 @@ header span {
 Navigation section
 ========================================================================== 
 */
+nav {
+  text-decoration: none;
+}
 
 nav a {
-  color: var(--nav-primary-link-color);
+  color: var(--nav-links-color);
 }
+
+/* Change background on mouse-over */
+nav a:hover {}
 
 /*
 ==========================================================================
