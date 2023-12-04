@@ -1,5 +1,23 @@
 /* 
 ==========================================================================
+Global variables
+========================================================================== 
+*/
+
+:root {
+  /* Color palette */
+  --navigation-primary-bg-color: #31343D;
+  --navigation-primary-text-color: ##92CCCD;
+  --hero-primary-text-color: #31343D;
+  --primary-title-text-color: #445876;
+  --hover-link-color: #435877;
+  --hover-element-color: #91CCCD;
+  --secondary-title-text-color: #31333E;
+  --page-primary-bg-color: #EDEDF6;
+}
+
+/* 
+==========================================================================
 Global styles
 ========================================================================== 
 */
@@ -13,6 +31,7 @@ body {
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
+  background-color: var(--page-primary-bg-color);
 }
 
 h1,
@@ -30,26 +49,13 @@ p {
 
 /* 
 ==========================================================================
-Global variables
-========================================================================== 
-*/
-
-:root {
-  /* Color palette */
-  --navigation-primary-bg-color: #31343D;
-  --navigation-primary-text-color: ##92CCCD;
-  --hero-primary-text-color: #31343D;
-  --primary-title-text-color: #445876;
-  --hover-link-color: #435877;
-  --hover-element-color: #91CCCD;
-  --secondary-title-text-color: #31333E;
-}
-
-/* 
-==========================================================================
 Header section
 ========================================================================== 
 */
+
+.top-navigation-container {
+  background-color: var();
+}
 
 /* 
 ==========================================================================
@@ -81,8 +87,6 @@ Default CSS layout for narrow screens
 Media queries 
 ========================================================================== 
 */
-
-/* Then progressively add bigger sizes from small to large */
 
 /* Smartphones start somewhere around here */
 @media screen and (min-width: 320px) {}
