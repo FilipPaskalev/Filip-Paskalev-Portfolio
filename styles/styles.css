@@ -70,16 +70,28 @@ header span {
 Navigation section
 ========================================================================== 
 */
-nav {
-  text-decoration: none;
+nav ul>li {
+  display: inline-block;
+  float: right;
 }
 
 nav a {
+  text-decoration: none;
   color: var(--nav-links-color);
 }
 
 /* Change background on mouse-over */
 nav a:hover {}
+
+/* Add a color to the active/current link */
+header a.active {
+  background-color: var(--header-secondary-bg-color);
+  color: var(--header-primary-bg-color);
+  text-decoration: none;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding-left: 100px;
+}
 
 /*
 ==========================================================================
