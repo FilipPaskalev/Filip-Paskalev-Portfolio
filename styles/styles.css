@@ -1,8 +1,4 @@
-/* 
-==========================================================================
-Global variables
-========================================================================== 
-*/
+/* =========================== Global variables ============================ */
 
 :root {
   /* Main color palette */
@@ -11,21 +7,17 @@ Global variables
   /* Header color palette */
   --header-primary-bg-color: #31343D;
   --header-secondary-bg-color: #92CCCD;
-  --transparent-logo-text: rgba(0, 0, 0, 0, 0);
+  --header-transparent-logo-text: rgba(0, 0, 0, 0, 0);
 
   /* Navigation color palette */
-  --nav-links-color: #92CCCD;
+  --nav-primary-links-color: #92CCCD;
 
   /* Hero section color palette */
   --hero-primary-text-color: #31343D;
   --hero-text-container-bg-color: #92CCCD;
 }
 
-/* 
-==========================================================================
-Global styles
-========================================================================== 
-*/
+/* ============================= Global styles ============================= */
 
 * {
   box-sizing: border-box;
@@ -52,121 +44,117 @@ p {
   margin: 0;
 }
 
-/* 
-==========================================================================
-Header section
-========================================================================== 
-*/
-
-header {
-  background-color: var(--header-primary-bg-color);
-  display: flex;
-
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
-header span {
-  background-color: var(--header-secondary-bg-color);
-}
-
-/* 
-==========================================================================
-Navigation section
-========================================================================== 
-*/
-
-nav {
-  display: flex;
-  flex-grow: 1;
-  justify-content: flex-end;
-  align-items: flex-start;
-  padding-right: 20px;
-}
-
-nav ul>li {
-  display: inline-block;
-  padding-left: 20px;
-}
-
-nav a {
-  text-decoration: none;
-  color: var(--nav-links-color);
-}
-
-/* Change background on mouse-over */
-nav a:hover {}
-
-/* Add a color to the active/current link */
-header a.active {
-  background-color: var(--header-secondary-bg-color);
-  color: var(--header-primary-bg-color);
-  text-decoration: none;
-  margin-top: 10px;
-  margin-bottom: 30px;
-  padding-left: 100px;
-}
-
-/*
-==========================================================================
-Main section
-========================================================================== 
-*/
-
-main {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 32px;
-  grid-row-gap: 32px;
-}
-
-/*
-==========================================================================
-Footer
-========================================================================== 
-*/
-
-/*
-==========================================================================
-Default CSS layout for narrow screens 
-========================================================================== 
-*/
-
-/*
-==========================================================================
-Media queries
-
+/* ============================= Media queries =============================
 From https://www.browserstack.com/guide/what-are-css-and-media-query-breakpoints
 Common Media Query Breakpoints
-Use breakpoints for the most commonly used device resolutions used across mobile, desktop, and tablet. These would be:
-
+Use breakpoints for the most commonly used device resolutions used across mobile, 
+desktop, and tablet. These would be:
 1920×1080 (8.89%)
 1366×768 (8.44%)
 360×640 (7.28%)
 414×896 (4.58%)
 1536×864 (3.88%)
 375×667 (3.75%)
+============================================================================ */
 
-========================================================================== 
-*/
+/* Smartphones */
+@media screen and (min-width: 320px) {
 
-/* Smartphones start somewhere around here */
-@media screen and (min-width: 320px) {}
+  /* ============================ Header section ============================= */
 
-/* You might do landscape phones here if your content seems to need it */
+  header {
+    background-color: var(--header-primary-bg-color);
+  }
+
+  header span {
+    background-color: var(--header-secondary-bg-color);
+  }
+
+  /* =========================== Navigation section ========================== */
+
+  /* nav {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding-right: 20px;
+  } */
+
+  /* nav ul>li {
+    display: inline-block;
+    padding-left: 20px;
+  } */
+
+  /* nav a {
+    text-decoration: none;
+    color: var(--nav-links-color);
+  } */
+
+  /* Change background on mouse-over */
+  /* nav a:hover {} */
+
+  /* Add a color to the active/current link */
+  /* header a.active {
+    background-color: var(--header-secondary-bg-color);
+    color: var(--header-primary-bg-color);
+    text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding-left: 100px;
+  } */
+
+
+
+  /* ============================= Main section ============================== */
+
+  /* main {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 32px;
+    grid-row-gap: 32px;
+  } */
+
+  /* ================================ Footer ================================= */
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Landscape phones */
 @media (min-width: 480px) {}
 
-/* Starting into tablets somewhere in here */
+/* Tablets */
 @media (min-width: 600px) {}
 
-/* Perhaps bigger tablets */
+/* Bigger tablets */
 @media (min-width: 768px) {}
 
 /* Desktop screen or landscape tablet */
 @media (min-width: 900px) {}
 
-/* A bit bigger if you need some adjustments around here */
+/* A bit bigger for adjustments */
 @media (min-width: 1024px) {}
 
 /* Widescreens */
