@@ -49,6 +49,8 @@ The repository contains an assignment (to build a portfolio according to set par
 
 [Mdn web docs - CSS properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)
 
+[......](https://css-tricks.com/a-complete-guide-to-custom-properties/#h-naming-custom-properties)
+
 ## Usage
 
 <!-- Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README. -->

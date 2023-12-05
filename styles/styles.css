@@ -11,6 +11,7 @@ Global variables
   /* Header color palette */
   --header-primary-bg-color: #31343D;
   --header-secondary-bg-color: #92CCCD;
+  --transparent-logo-text: rgba(0, 0, 0, 0, 0);
 
   /* Navigation color palette */
   --nav-links-color: #92CCCD;
@@ -112,6 +113,13 @@ Main section
 ========================================================================== 
 */
 
+main {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 32px;
+  grid-row-gap: 32px;
+}
 
 /*
 ==========================================================================
@@ -127,7 +135,19 @@ Default CSS layout for narrow screens
 
 /*
 ==========================================================================
-Media queries 
+Media queries
+
+From https://www.browserstack.com/guide/what-are-css-and-media-query-breakpoints
+Common Media Query Breakpoints
+Use breakpoints for the most commonly used device resolutions used across mobile, desktop, and tablet. These would be:
+
+1920×1080 (8.89%)
+1366×768 (8.44%)
+360×640 (7.28%)
+414×896 (4.58%)
+1536×864 (3.88%)
+375×667 (3.75%)
+
 ========================================================================== 
 */
 
