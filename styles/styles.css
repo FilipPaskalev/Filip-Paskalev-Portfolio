@@ -59,6 +59,10 @@ Header section
 
 header {
   background-color: var(--header-primary-bg-color);
+  display: flex;
+
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 header span {
@@ -70,9 +74,18 @@ header span {
 Navigation section
 ========================================================================== 
 */
+
+nav {
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding-right: 20px;
+}
+
 nav ul>li {
   display: inline-block;
-  float: right;
+  padding-left: 20px;
 }
 
 nav a {
