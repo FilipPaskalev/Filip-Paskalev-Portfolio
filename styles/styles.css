@@ -2,7 +2,9 @@
 
 :root {
   /* Main color palette */
-  --page-primary-bg-color: #EDEDF6;
+  --primary-bg-color: #EDEDF6;
+  --primary-text-color: black;
+  --primary-font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
   /* Header color palette */
   --header-primary-bg-color: #31343D;
@@ -21,14 +23,14 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: var(--primary-font-family);
   line-height: 1.5;
-  background-color: var(--page-primary-bg-color);
+  background-color: var(--primary-bg-color);
 }
 
 h1,
@@ -44,8 +46,17 @@ p {
   margin: 0;
 }
 
+header {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
 /* ============================= Media queries =============================
-From https://www.browserstack.com/guide/what-are-css-and-media-query-breakpoints
+/* TODO - delete taht info after finish with styling */
+/* From https://www.browserstack.com/guide/what-are-css-and-media-query-breakpoints
 Common Media Query Breakpoints
 Use breakpoints for the most commonly used device resolutions used across mobile, 
 desktop, and tablet. These would be:
@@ -55,65 +66,16 @@ desktop, and tablet. These would be:
 414×896 (4.58%)
 1536×864 (3.88%)
 375×667 (3.75%)
-============================================================================ */
-
+============================================================================*/
+/* TODO - split media queries on separate css files */
 /* Smartphones */
 @media screen and (min-width: 320px) {
 
   /* ============================ Header section ============================= */
 
-  header {
-    background-color: var(--header-primary-bg-color);
-  }
-
-  header span {
-    background-color: var(--header-secondary-bg-color);
-  }
-
   /* =========================== Navigation section ========================== */
 
-  /* nav {
-    display: flex;
-    flex-grow: 1;
-    justify-content: flex-end;
-    align-items: flex-start;
-    padding-right: 20px;
-  } */
-
-  /* nav ul>li {
-    display: inline-block;
-    padding-left: 20px;
-  } */
-
-  /* nav a {
-    text-decoration: none;
-    color: var(--nav-links-color);
-  } */
-
-  /* Change background on mouse-over */
-  /* nav a:hover {} */
-
-  /* Add a color to the active/current link */
-  /* header a.active {
-    background-color: var(--header-secondary-bg-color);
-    color: var(--header-primary-bg-color);
-    text-decoration: none;
-    margin-top: 10px;
-    margin-bottom: 30px;
-    padding-left: 100px;
-  } */
-
-
-
   /* ============================= Main section ============================== */
-
-  /* main {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 32px;
-    grid-row-gap: 32px;
-  } */
 
   /* ================================ Footer ================================= */
 
@@ -130,32 +92,68 @@ desktop, and tablet. These would be:
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* Landscape phones */
-@media (min-width: 480px) {}
+@media (min-width: 480px) {
+  /* ============================ Header section ============================= */
+
+  /* =========================== Navigation section ========================== */
+
+  /* ============================= Main section ============================== */
+
+  /* ================================ Footer ================================= */
+}
 
 /* Tablets */
-@media (min-width: 600px) {}
+@media (min-width: 600px) {
+  /* ============================ Header section ============================= */
+
+  /* =========================== Navigation section ========================== */
+
+  /* ============================= Main section ============================== */
+
+  /* ================================ Footer ================================= */
+}
 
 /* Bigger tablets */
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+  /* ============================ Header section ============================= */
+
+  /* =========================== Navigation section ========================== */
+
+  /* ============================= Main section ============================== */
+
+  /* ================================ Footer ================================= */
+}
 
 /* Desktop screen or landscape tablet */
-@media (min-width: 900px) {}
+@media (min-width: 900px) {
+  /* ============================ Header section ============================= */
+
+  /* =========================== Navigation section ========================== */
+
+  /* ============================= Main section ============================== */
+
+  /* ================================ Footer ================================= */
+}
 
 /* A bit bigger for adjustments */
-@media (min-width: 1024px) {}
+@media (min-width: 1024px) {
+  /* ============================ Header section ============================= */
+
+  /* =========================== Navigation section ========================== */
+
+  /* ============================= Main section ============================== */
+
+  /* ================================ Footer ================================= */
+}
 
 /* Widescreens */
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+  /* ============================ Header section ============================= */
+
+  /* =========================== Navigation section ========================== */
+
+  /* ============================= Main section ============================== */
+
+  /* ================================ Footer ================================= */
+}
