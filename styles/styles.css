@@ -33,27 +33,6 @@ body {
   background-color: var(--primary-bg-color);
 }
 
-header {
-  padding: 0;
-  margin: 0;
-  text-decoration: none;
-  list-style: none;
-  box-sizing: border-box;
-  background-color: var(--header-primary-bg-color);
-  height: 80px;
-  width: 100%;
-}
-
-.logo {
-  background-color: var(--header-secondary-bg-color);
-  color: var(--header-transparent-logo-text);
-  font-size: 40px;
-  line-height: 80px;
-  padding: 0 100px;
-  font-weight: bold;
-}
-
-nav {}
 
 h1,
 h2,
