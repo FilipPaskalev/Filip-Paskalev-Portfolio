@@ -54,6 +54,8 @@ header {
   background-color: var(--header-primary-bg-color);
 }
 
+.logo-container {}
+
 nav {
   display: flex;
   justify-content: space-between;
