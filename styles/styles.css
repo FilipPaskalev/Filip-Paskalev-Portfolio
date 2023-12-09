@@ -1,24 +1,24 @@
 /* Global variables ======================================================= */
 
 :root {
-  /* Main color palette */
-  --page-primary-bg-color: #EDEDF6;
-  --primary-text-color: black;
-  --primary-font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
-  /* Header color palette */
+  /* Header */
   --header-primary-bg-color: #31343D;
   --header-secondary-bg-color: #92CCCD;
   /* TODO - fix DOM to be able to apply transparent text color */
-  /* --header-transparent-logo-text: rgba(0, 0, 0, 0, 0); */
-  --header-transparent-logo-text: #31343D;
+  --header-transparent-logo-text: rgba(0, 0, 0, 0, 0);
+  /* --header-transparent-logo-text: #31343D; */
 
-  /* Navigation color palette */
+  /* Navigation*/
   --nav-primary-links-color: #92CCCD;
 
-  /* Hero section color palette */
+  /* Hero */
   --hero-primary-text-color: #31343D;
   --hero-text-container-bg-color: #92CCCD;
+
+  /* Main */
+  --page-primary-bg-color: #EDEDF6;
+  --primary-text-color: black;
+  --primary-font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 /* Global styles ======================================================= */
@@ -52,10 +52,15 @@ p {
 
 header {
   background-color: var(--header-primary-bg-color);
+  height: 56px;
 }
 
 .logo-container {
   background-color: var(--header-secondary-bg-color);
+}
+
+.logo-text {
+  color: var(--header-transparent-logo-text);
 }
 
 nav {
@@ -64,6 +69,20 @@ nav {
   align-items: center;
   padding-left: 20px;
   padding-right: 20px;
+  background-color: var(--header-primary-bg-color);
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--nav-primary-links-color);
 }
 
 /* ============================= Media queries =============================
@@ -116,4 +135,8 @@ desktop, and tablet. These would be:
 @media (min-width: 1024px) {}
 
 /* Widescreens */
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+  header {
+    height: 64px;
+  }
+}
