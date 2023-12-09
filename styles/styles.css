@@ -1,4 +1,4 @@
-/* =========================== Global variables ============================ */
+/* Global variables ======================================================= */
 
 :root {
   /* Main color palette */
@@ -9,7 +9,9 @@
   /* Header color palette */
   --header-primary-bg-color: #31343D;
   --header-secondary-bg-color: #92CCCD;
-  --header-transparent-logo-text: rgba(0, 0, 0, 0, 0);
+  /* TODO - fix DOM to be able to apply transparent text color */
+  /* --header-transparent-logo-text: rgba(0, 0, 0, 0, 0); */
+  --header-transparent-logo-text: #31343D;
 
   /* Navigation color palette */
   --nav-primary-links-color: #92CCCD;
@@ -19,7 +21,7 @@
   --hero-text-container-bg-color: #92CCCD;
 }
 
-/* ============================= Global styles ============================= */
+/* Global styles ======================================================= */
 
 * {
   box-sizing: border-box;
@@ -28,11 +30,29 @@
   font-family: var(--primary-font-family);
 }
 
+header {
+  background-color: var(--header-primary-bg-color);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  padding-top: 2px;
+  padding-left: 2px;
+}
+
+.nav-label-container {
+  background-color: var(--header-secondary-bg-color);
+  font-size: larger;
+  text-transform: uppercase;
+  color: var(--header-transparent-logo-text);
+}
+
+.nav-btn {
+  color: var(--nav-primary-links-color);
+  text-decoration: none;
+}
+
 body {
   line-height: 1.5;
   background-color: var(--primary-bg-color);
 }
-
 
 h1,
 h2,
@@ -60,11 +80,18 @@ desktop, and tablet. These would be:
 1536×864 (3.88%)
 375×667 (3.75%)
 ============================================================================*/
+
 /* TODO - split media queries on separate css files */
 /* Smartphones */
 @media screen and (min-width: 320px) {
 
   /* ============================ Header section ============================= */
+
+  .nav-label-container {
+    width: 150px;
+    text-align: right;
+    padding-right: 5px;
+  }
 
   /* =========================== Navigation section ========================== */
 
