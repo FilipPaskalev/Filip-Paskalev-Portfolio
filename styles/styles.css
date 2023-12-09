@@ -23,48 +23,8 @@
 
 /* Global styles ======================================================= */
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: var(--primary-font-family);
-}
-
 header {
-  background-color: var(--header-primary-bg-color);
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  padding-top: 2px;
-  padding-left: 2px;
-}
-
-.nav-label-container {
-  background-color: var(--header-secondary-bg-color);
-  font-size: larger;
-  text-transform: uppercase;
-  color: var(--header-transparent-logo-text);
-}
-
-.nav-btn {
-  color: var(--nav-primary-links-color);
-  text-decoration: none;
-}
-
-body {
-  line-height: 1.5;
-  background-color: var(--primary-bg-color);
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
-
-p {
-  margin: 0;
+  margin: 0px;
 }
 
 /* ============================= Media queries =============================
@@ -87,12 +47,6 @@ desktop, and tablet. These would be:
 
   /* ============================ Header section ============================= */
 
-  .nav-label-container {
-    width: 150px;
-    text-align: right;
-    padding-right: 5px;
-  }
-
   /* =========================== Navigation section ========================== */
 
   /* ============================= Main section ============================== */
@@ -100,17 +54,6 @@ desktop, and tablet. These would be:
   /* ================================ Footer ================================= */
 
 }
-
-
-
-
-
-
-
-
-
-
-
 
 /* Landscape phones */
 @media (min-width: 480px) {
