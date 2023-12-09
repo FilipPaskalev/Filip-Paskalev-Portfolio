@@ -57,6 +57,9 @@ header {
 
 .logo-container {
   background-color: var(--header-secondary-bg-color);
+  height: 40px;
+  width: 228px;
+  margin-top: 5px;
 }
 
 .logo-text {
@@ -108,7 +111,12 @@ desktop, and tablet. These would be:
 /* TODO - split media queries on separate css files */
 /* Smartphones */
 @media screen and (min-width: 320px) {
+
   /* Header section ======================================================= */
+
+  .logo-container {
+    height: 43px;
+  }
 
   /* Navigation section =================================================== */
 
@@ -119,7 +127,12 @@ desktop, and tablet. These would be:
 
 /* Landscape phones */
 @media (min-width: 480px) {
+
   /* Header section ======================================================= */
+
+  .logo-container {
+    height: 43px;
+  }
 
   /* Navigation section =================================================== */
 
@@ -142,7 +155,15 @@ desktop, and tablet. These would be:
 
 /* Widescreens */
 @media (min-width: 1200px) {
+
+  /* Header section ======================================================= */
+
   header {
     height: 64px;
   }
+
+  .logo-container {
+    height: 49px;
+  }
+
 }
