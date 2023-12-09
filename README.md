@@ -188,6 +188,7 @@ You can also document commands to lint the code or run tests. These steps help t
 ![Static Badge](https://img.shields.io/badge/text_one-somelabel-black)
 ![Static Badge](https://img.shields.io/badge/text_one-somelabel-black)
 ![Static Badge](https://img.shields.io/badge/text_one-somelabel-black)
+<!-- ![Static Badge](https://img.shields.io/badge/text_one-somelabel-black)https://www.flaticon.com/ -->
 
 ### Authors and acknowledgment
 
