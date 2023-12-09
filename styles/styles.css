@@ -83,6 +83,12 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: var(--nav-primary-links-color);
+  transition: all .3s ease;
+}
+
+ul li a:hover {
+  background: var(--header-primary-bg-color);
+  color: var(--page-primary-bg-color);
 }
 
 /* ============================= Media queries =============================
