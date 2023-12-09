@@ -2,7 +2,7 @@
 
 :root {
   /* Main color palette */
-  ----page-primary-bg-color: #EDEDF6;
+  --page-primary-bg-color: #EDEDF6;
   --primary-text-color: black;
   --primary-font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
@@ -54,7 +54,9 @@ header {
   background-color: var(--header-primary-bg-color);
 }
 
-.logo-container {}
+.logo-container {
+  background-color: var(--header-secondary-bg-color);
+}
 
 nav {
   display: flex;
