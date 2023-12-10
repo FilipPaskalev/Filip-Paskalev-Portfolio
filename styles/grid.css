@@ -13,6 +13,8 @@
   --color-SOFT-PEACH: #EDEDF6;
   /* Text */
   --color-BLACK: #000000;
+  /* Text */
+  --color-WHITE: #FFFFFF;
   /* Supporting */
   --color-SMOKY-GREY: #707070;
   /* Supporting */
@@ -49,9 +51,28 @@ header {
 
 header span {
   background-color: var(--color-CYAN-OPAQUE);
+  height: 50px;
+  width: 300px;
 }
 
-header nav a {}
+header nav {
+  background-color: var(--color-GUNMETAL);
+}
+
+header nav a {
+  text-decoration: underline 2px;
+  background-color: var(--color-GUNMETAL);
+  color: var(--color-CYAN-OPAQUE);
+}
+
+header nav a:active {
+  background-color: var(--color-GUNMETAL);
+}
+
+header nav a:hover {
+  color: var(--color-WHITE);
+  cursor: pointer;
+}
 
 h1 {
   color: var(--color-GUNMETAL);
