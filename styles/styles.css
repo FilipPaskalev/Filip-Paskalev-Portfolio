@@ -4,7 +4,7 @@
   /* Header */
   --header-primary-bg-color: #31343D;
   --header-logo-bg-color: #92CCCD;
-  --header-transparent-logo-text: rgba(0, 0, 0, 0, 0);
+  --header-transparent-logo-text: rgba(255, 255, 255, 0);
   --header-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
   /* Navigation*/
@@ -53,11 +53,20 @@ p {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: #31343D;
-  background: #31343D;
+  background-color: var(--header-primary-bg-color);
   color: #92CCCD;
   height: 56px;
-  padding: 1em;
+  /* padding: 1em; */
+}
+
+.top-nav>span {
+  width: 230px;
+  height: 51px;
+  background-color: var(--header-logo-bg-color);
+}
+
+h1 {
+  color: var(--header-primary-bg-color);
 }
 
 .menu {
@@ -69,18 +78,25 @@ p {
 }
 
 .menu>li {
-  margin: 0 1rem;
+  /* margin: 0 1rem; */
   overflow: hidden;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: var(--nav-primary-links-color);
+  border-bottom: 2px solid var(--nav-primary-links-color);
 }
 
 .menu-button-container {
   display: none;
   height: 100%;
   width: 30px;
-  cursor: pointer;
+  /* cursor: pointer; */
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-right: 20px;
 }
 
 #menu-toggle {
@@ -115,13 +131,24 @@ p {
 }
 
 #menu-toggle:checked+.menu-button-container .menu-button {
-  background: rgba(255, 255, 255, 0);
+  background: var(--header-transparent-logo-text);
 }
 
 #menu-toggle:checked+.menu-button-container .menu-button::after {
   margin-top: 0px;
   transform: rotate(-405deg);
 }
+
+.hero-container {
+  width: 100%;
+  height: 250px;
+  background-color: pink;
+}
+
+
+
+
+
 
 @media (max-width: 600px) {
   .menu-button-container {
@@ -131,7 +158,7 @@ p {
   .menu {
     position: absolute;
     top: 0;
-    margin-top: 50px;
+    margin-top: 56px;
     left: 0;
     flex-direction: column;
     width: 100%;
@@ -160,17 +187,11 @@ p {
     margin: 0;
     padding: 0.5em 0;
     width: 100%;
-    color: white;
-    background-color: #222;
+    /* color: white; */
+    background-color: var(--header-primary-bg-color);
   }
 
   .menu>li:not(:last-child) {
-    border-bottom: 1px solid #444;
+    border-bottom: 1px solid black;
   }
-}
-
-.hero-container {
-  width: 100%;
-  height: 250px;
-  background-color: pink;
 }
