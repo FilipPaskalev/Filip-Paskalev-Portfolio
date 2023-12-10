@@ -47,6 +47,12 @@ header {
   color: var(--color-CYAN-OPAQUE);
 }
 
+header span {
+  background-color: var(--color-CYAN-OPAQUE);
+}
+
+header nav a {}
+
 h1 {
   color: var(--color-GUNMETAL);
 }
@@ -74,3 +80,17 @@ p {
 
 
 /* Media queries ===========================================================*/
+
+@media screen and (max-width: 320px) {}
+
+@media screen and (max-width: 480px) {}
+
+@media screen and (max-width: 600px) {}
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 900px) {}
+
+@media screen and (max-width: 1024px) {}
+
+@media screen and (max-width: 1200px) {}
