@@ -40,7 +40,6 @@ body {
   line-height: 1.5;
   height: 100vh;
   background: var(--color-SOFT-PEACH);
-  display: grid;
 }
 
 header {
@@ -65,6 +64,12 @@ h6 {
 
 p {
   margin: 0;
+}
+
+.header-grid-container,
+.main-grid-container,
+.footer-grid-container {
+  display: grid;
 }
 
 
