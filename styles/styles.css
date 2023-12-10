@@ -163,10 +163,22 @@ h1 {
   object-fit: cover;
 }
 
+.hero-container div {
+  background-color: var(--hero-text-container-bg-color);
+  width: 200px;
+  height: 40px;
+}
+
+.hero-container div h2 {
+  text-align: center;
+  vertical-align: text-bottom;
+  color: var(--hero-primary-text-color);
+}
+
+/* Global styles - Main ======================================================= */
 
 
-
-
+/* Media queries ============================================================== */
 
 @media (max-width: 600px) {
   .menu-button-container {
