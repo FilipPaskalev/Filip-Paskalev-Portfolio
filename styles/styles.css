@@ -3,10 +3,9 @@
 :root {
   /* Header */
   --header-primary-bg-color: #31343D;
-  --header-secondary-bg-color: #92CCCD;
-  /* TODO - fix DOM to be able to apply transparent text color */
+  --header-logo-bg-color: #92CCCD;
   --header-transparent-logo-text: rgba(0, 0, 0, 0, 0);
-  /* --header-transparent-logo-text: #31343D; */
+  --header-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
   /* Navigation*/
   --nav-primary-links-color: #92CCCD;
@@ -30,8 +29,7 @@
 }
 
 body {
-  /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: var(--header-font-family);
   line-height: 1.5;
   height: 100vh;
   background: var(--page-primary-bg-color);
@@ -50,120 +48,129 @@ p {
   margin: 0;
 }
 
-header {
-  background-color: var(--header-primary-bg-color);
-  height: 56px;
-}
-
-.logo-container {
-  background-color: var(--header-secondary-bg-color);
-  height: 40px;
-  width: 228px;
-  margin-top: 5px;
-}
-
-.logo-text {
-  color: var(--header-transparent-logo-text);
-}
-
-nav {
+.top-nav {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
   align-items: center;
-  padding-left: 20px;
-  padding-right: 20px;
-  background-color: var(--header-primary-bg-color);
+  justify-content: space-between;
+  background-color: #31343D;
+  background: #31343D;
+  color: #92CCCD;
+  height: 56px;
+  padding: 1em;
 }
 
-nav ul {
-  list-style: none;
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-nav ul li {
-  display: inline-block;
+.menu>li {
+  margin: 0 1rem;
+  overflow: hidden;
 }
 
-nav ul li a {
-  text-decoration: none;
-  color: var(--nav-primary-links-color);
-  transition: all .3s ease;
+.menu-button-container {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-ul li a:hover {
-  background: var(--header-primary-bg-color);
-  color: var(--page-primary-bg-color);
+#menu-toggle {
+  display: none;
 }
 
-/* ============================= Media queries =============================
-/* TODO - delete that info after finish with styling */
-/* From https://www.browserstack.com/guide/what-are-css-and-media-query-breakpoints
-Common Media Query Breakpoints
-Use breakpoints for the most commonly used device resolutions used across mobile, 
-desktop, and tablet. These would be:
-1920×1080 (8.89%)
-1366×768 (8.44%)
-360×640 (7.28%)
-414×896 (4.58%)
-1536×864 (3.88%)
-375×667 (3.75%)
-============================================================================*/
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: #92CCCD;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+}
 
-/* TODO - split media queries on separate css files */
-/* Smartphones */
-@media screen and (min-width: 320px) {
+.menu-button::before {
+  content: '';
+  margin-top: -8px;
+}
 
-  /* Header section ======================================================= */
+.menu-button::after {
+  content: '';
+  margin-top: 8px;
+}
 
-  .logo-container {
-    height: 43px;
+#menu-toggle:checked+.menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button {
+  background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+
+@media (max-width: 600px) {
+  .menu-button-container {
+    display: flex;
   }
 
-  /* Navigation section =================================================== */
+  .menu {
+    position: absolute;
+    top: 0;
+    margin-top: 50px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
 
-  /* Main section ========================================================= */
+  #menu-toggle~.menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
 
-  /* Footer =============================================================== */
+  #menu-toggle:checked~.menu li {
+    border: 1px solid #333;
+    height: 2.5em;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .menu>li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: white;
+    background-color: #222;
+  }
+
+  .menu>li:not(:last-child) {
+    border-bottom: 1px solid #444;
+  }
 }
 
-/* Landscape phones */
-@media (min-width: 480px) {
-
-  /* Header section ======================================================= */
-
-  .logo-container {
-    height: 43px;
-  }
-
-  /* Navigation section =================================================== */
-
-  /* Main section ========================================================= */
-
-  /* Footer =============================================================== */
-}
-
-/* Tablets */
-@media (min-width: 600px) {}
-
-/* Bigger tablets */
-@media (min-width: 768px) {}
-
-/* Desktop screen or landscape tablet */
-@media (min-width: 900px) {}
-
-/* A bit bigger for adjustments */
-@media (min-width: 1024px) {}
-
-/* Widescreens */
-@media (min-width: 1200px) {
-
-  /* Header section ======================================================= */
-
-  header {
-    height: 64px;
-  }
-
-  .logo-container {
-    height: 49px;
-  }
-
+.hero-container {
+  width: 100%;
+  height: 250px;
+  background-color: pink;
 }
