@@ -61,8 +61,12 @@ p {
 
 .top-nav>span {
   width: 230px;
-  height: 51px;
+  height: 50px;
   background-color: var(--header-logo-bg-color);
+  text-align: right;
+  font-size: 35px;
+  padding-right: 5px;
+  font-weight: 750;
 }
 
 h1 {
