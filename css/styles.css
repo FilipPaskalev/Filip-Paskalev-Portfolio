@@ -49,7 +49,7 @@ header {
   color: var(--color-CYAN-OPAQUE);
 }
 
-header span {
+header section {
   background-color: var(--color-CYAN-OPAQUE);
   height: 50px;
   width: 300px;
@@ -91,12 +91,6 @@ h6 {
 
 p {
   margin: 0;
-}
-
-.header-grid-container,
-.main-grid-container,
-.footer-grid-container {
-  display: grid;
 }
 
 
