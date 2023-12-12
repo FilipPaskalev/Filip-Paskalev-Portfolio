@@ -1,26 +1,34 @@
-/* Global variables ======================================================= */
+/* Global variables ======================================================== */
 
 :root {
-  /* Header */
-  --header-primary-bg-color: #31343D;
-  --header-logo-bg-color: #92CCCD;
-  --header-transparent-logo-text: rgba(255, 255, 255, 0);
-  --header-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  /* Color palette ========================================================= */
 
-  /* Navigation*/
-  --nav-primary-links-color: #92CCCD;
+  /* Primary */
+  --color-DUSK: #445876;
+  /* Secondary */
+  --color-CYAN-OPAQUE: #92CCCD;
+  /* Tertiary */
+  --color-GUNMETAL: #31343D;
+  /* Background */
+  --color-SOFT-PEACH: #EDEDF6;
+  /* Text */
+  --color-BLACK: #000000;
+  /* Text */
+  --color-WHITE: #FFFFFF;
+  /* Supporting */
+  --color-SMOKY-GREY: #707070;
+  /* Supporting */
+  --color-TRANSPARENT: rgba(255, 255, 255, 0);
 
-  /* Hero */
-  --hero-primary-text-color: #31343D;
-  --hero-text-container-bg-color: #92CCCD;
+  /* Fonts ================================================================= */
 
-  /* Main */
-  --page-primary-bg-color: #EDEDF6;
-  --primary-text-color: black;
-  --primary-font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  /* Usage: text, articles */
+  --font-PRIMARY: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  /* Usage: navigation, titles */
+  --font-SECONDARY: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-/* Global styles ======================================================= */
+/* Global styles =========================================================== */
 
 * {
   box-sizing: border-box;
@@ -29,14 +37,51 @@
 }
 
 body {
-  font-family: var(--header-font-family);
+  font-family: var(--font-PRIMARY);
+  color: var(--color-BLACK);
   line-height: 1.5;
   height: 100vh;
-  background: var(--page-primary-bg-color);
+  background: var(--color-SOFT-PEACH);
 }
 
-h1,
-h2,
+header {
+  font-family: var(--font-SECONDARY);
+  color: var(--color-CYAN-OPAQUE);
+}
+
+header span {
+  background-color: var(--color-CYAN-OPAQUE);
+  height: 50px;
+  width: 300px;
+}
+
+header nav {
+  background-color: var(--color-GUNMETAL);
+}
+
+header nav a {
+  text-decoration: underline 2px;
+  background-color: var(--color-GUNMETAL);
+  color: var(--color-CYAN-OPAQUE);
+}
+
+header nav a:active {
+  background-color: var(--color-GUNMETAL);
+}
+
+header nav a:hover {
+  color: var(--color-WHITE);
+  cursor: pointer;
+}
+
+h1 {
+  color: var(--color-GUNMETAL);
+}
+
+h2 {
+  color: var(--color-GUNMETAL);
+}
+
 h3,
 h4,
 h5,
@@ -48,181 +93,25 @@ p {
   margin: 0;
 }
 
-.top-nav {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  background-color: var(--header-primary-bg-color);
-  color: #92CCCD;
-  height: 56px;
-  /* padding: 1em; */
+.header-grid-container,
+.main-grid-container,
+.footer-grid-container {
+  display: grid;
 }
 
-.top-nav>span {
-  width: 230px;
-  height: 50px;
-  background-color: var(--header-logo-bg-color);
-  text-align: right;
-  font-size: 35px;
-  padding-right: 5px;
-  font-weight: 750;
-}
 
-h1 {
-  color: var(--header-primary-bg-color);
-}
+/* Media queries ===========================================================*/
 
-.menu {
-  display: flex;
-  flex-direction: row;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  margin-right: 20px;
-}
+@media screen and (max-width: 320px) {}
 
-.menu>li {
-  /* margin: 0 1rem; */
-  overflow: hidden;
-  margin-left: 10px;
-}
+@media screen and (max-width: 480px) {}
 
-.menu>li:nth-child(0) {
-  padding-right: 20px;
-}
+@media screen and (max-width: 600px) {}
 
-.menu li a {
-  text-decoration: none;
-  color: var(--nav-primary-links-color);
-  border-bottom: 2px solid var(--nav-primary-links-color);
-  padding-left: 5px;
-  padding-right: 5px;
-}
+@media screen and (max-width: 768px) {}
 
-.menu-button-container {
-  display: none;
-  height: 100%;
-  width: 30px;
-  /* cursor: pointer; */
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-right: 20px;
-}
+@media screen and (max-width: 900px) {}
 
-#menu-toggle {
-  display: none;
-}
+@media screen and (max-width: 1024px) {}
 
-.menu-button,
-.menu-button::before,
-.menu-button::after {
-  display: block;
-  background-color: #92CCCD;
-  position: absolute;
-  height: 4px;
-  width: 30px;
-  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
-  border-radius: 2px;
-}
-
-.menu-button::before {
-  content: '';
-  margin-top: -8px;
-}
-
-.menu-button::after {
-  content: '';
-  margin-top: 8px;
-}
-
-#menu-toggle:checked+.menu-button-container .menu-button::before {
-  margin-top: 0px;
-  transform: rotate(405deg);
-}
-
-#menu-toggle:checked+.menu-button-container .menu-button {
-  background: var(--header-transparent-logo-text);
-}
-
-#menu-toggle:checked+.menu-button-container .menu-button::after {
-  margin-top: 0px;
-  transform: rotate(-405deg);
-}
-
-/* Global styles - Hero ======================================================= */
-
-.hero-container {
-  width: 100%;
-}
-
-.hero-container>img {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-}
-
-.hero-container div {
-  background-color: var(--hero-text-container-bg-color);
-  width: 200px;
-  height: 40px;
-}
-
-.hero-container div h2 {
-  text-align: center;
-  vertical-align: text-bottom;
-  color: var(--hero-primary-text-color);
-}
-
-/* Global styles - Main ======================================================= */
-
-
-/* Media queries ============================================================== */
-
-@media (max-width: 600px) {
-  .menu-button-container {
-    display: flex;
-  }
-
-  .menu {
-    position: absolute;
-    top: 0;
-    margin-top: 56px;
-    left: 0;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #menu-toggle~.menu li {
-    height: 0;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-  }
-
-  #menu-toggle:checked~.menu li {
-    border: 1px solid #333;
-    height: 2.5em;
-    padding: 0.5em;
-    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-  }
-
-  .menu>li {
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0.5em 0;
-    width: 100%;
-    /* color: white; */
-    background-color: var(--header-primary-bg-color);
-  }
-
-  .menu>li:not(:last-child) {
-    border-bottom: 1px solid black;
-  }
-
-}
+@media screen and (max-width: 1200px) {}
