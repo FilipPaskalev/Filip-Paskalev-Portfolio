@@ -47,16 +47,28 @@ body {
 header {
   font-family: var(--font-SECONDARY);
   color: var(--color-CYAN-OPAQUE);
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-GUNMETAL);
 }
 
 header section {
   background-color: var(--color-CYAN-OPAQUE);
   height: 50px;
-  width: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10px;
 }
+
+
 
 header nav {
   background-color: var(--color-GUNMETAL);
+  display: flex;
+  justify-content: space-around;
+  height: 40px;
+  align-items: center;
 }
 
 header nav a {
@@ -67,6 +79,7 @@ header nav a {
 
 header nav a:active {
   background-color: var(--color-GUNMETAL);
+  color: var(--color-CYAN-OPAQUE);
 }
 
 header nav a:hover {
@@ -76,6 +89,8 @@ header nav a:hover {
 
 h1 {
   color: var(--color-GUNMETAL);
+  font-size: 5vh;
+  font-weight: bolder;
 }
 
 h2 {
