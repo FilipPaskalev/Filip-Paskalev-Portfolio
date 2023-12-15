@@ -114,10 +114,9 @@ h2 {
   font-weight: bolder;
 }
 
-#about-me {}
-
 #about-me,
-#work {
+#work,
+#contact-me {
   display: flex;
   margin-left: 5px;
   margin-right: 10px;
@@ -127,11 +126,18 @@ h2 {
   align-items: stretch;
 }
 
+#about-me {
+  margin-bottom: 10px;
+}
+
 /* TODO separate to 2 different name classes for about-me & work sections for better reading*/
+/* TODO - check if I need to separate them :D */
 .main-heading-container {
   border-right: solid;
   border-width: 3px;
   border-color: var(--color-DUSK);
+  /* TODO - research how thats work with font scaling and what is the way to handle it */
+  min-width: 60px;
 }
 
 h3 {
@@ -145,8 +151,18 @@ main article p {
   text-align: justify;
 }
 
-.projects {
+.projects-grid-container {
   display: grid;
+}
+
+.projects-grid-container article {
+  background-color: var(--color-CYAN-OPAQUE);
+  padding: 3px;
+  margin-bottom: 10px;
+}
+
+.projects-grid-container article img {
+  width: 100%;
 }
 
 h4,
