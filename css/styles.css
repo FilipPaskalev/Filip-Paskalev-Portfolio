@@ -114,7 +114,41 @@ h2 {
   font-weight: bolder;
 }
 
-h3,
+#about-me {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  margin-left: 5px;
+  margin-right: 10px;
+  align-items: stretch;
+  gap: 5px;
+}
+
+/* TODO separate to 2 different name classes for about-me & work sections for better reading*/
+.main-heading-container {
+  border-right: solid;
+  border-width: 3px;
+  border-color: var(--color-DUSK);
+}
+
+h3 {
+  color: var(--color-DUSK);
+  font-weight: bolder;
+  margin-right: 5px;
+}
+
+main article p {
+  text-align: justify;
+}
+
+#work {
+  display: flex;
+}
+
+.projects {
+  display: grid;
+}
+
 h4,
 h5,
 h6 {
