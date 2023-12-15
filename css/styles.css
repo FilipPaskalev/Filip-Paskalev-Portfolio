@@ -159,6 +159,7 @@ main article p {
 .projects-grid-container img {
   width: 100%;
   padding: 3px;
+  min-height: 150px;
 }
 
 .projects-grid-container hgroup {
@@ -179,7 +180,15 @@ h5 {
   padding: 2px 5px 2px 5px;
 }
 
-h5,
+footer {
+  display: flexbox;
+}
+
+footer section {
+  flex-direction: column;
+  align-content: space-around;
+}
+
 h6 {
   margin: 0;
 }
