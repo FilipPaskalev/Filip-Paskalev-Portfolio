@@ -69,8 +69,10 @@ header nav {
   align-items: center;
 }
 
+/* TODO - how to make text-underline slightly wider than text IDEA: span wrapper with bottom box border*/
 header nav a {
   text-decoration: underline 2px;
+  text-underline-offset: 5px;
   background-color: var(--color-GUNMETAL);
   color: var(--color-CYAN-OPAQUE);
 }
@@ -110,7 +112,7 @@ aside section {
 
 h2 {
   color: var(--color-GUNMETAL);
-  font-size: 4vh;
+  font-size: 22px;
   font-weight: bolder;
 }
 
@@ -149,16 +151,19 @@ main article p {
   text-align: justify;
 }
 
+.projects-grid-container {
+  display: grid;
+}
+
 .projects-grid-container article {
   background-color: var(--color-CYAN-OPAQUE);
-  /* padding: 3px; */
+  padding: 3px;
   margin-top: 10px;
   position: relative;
 }
 
 .projects-grid-container img {
   width: 100%;
-  padding: 3px;
   min-height: 150px;
 }
 
@@ -167,7 +172,7 @@ main article p {
   width: 100px;
   position: absolute;
   top: 55%;
-  left: 0;
+  left: 3px;
   width: auto;
 }
 
@@ -194,7 +199,7 @@ footer section a {
   text-decoration: underline 2px var(--color-DUSK);
   color: var(--color-BLACK);
   font-weight: 500;
-  text-underline-offset: 0.4em;
+  text-underline-offset: 6px;
 }
 
 h6 {
