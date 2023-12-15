@@ -138,6 +138,7 @@ h3 {
   color: var(--color-DUSK);
   font-weight: bolder;
   margin-right: 5px;
+  text-align: right;
 }
 
 main article p {
