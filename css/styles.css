@@ -114,14 +114,17 @@ h2 {
   font-weight: bolder;
 }
 
-#about-me {
+#about-me {}
+
+#about-me,
+#work {
   display: flex;
-  justify-content: flex-start;
-  flex-direction: row;
   margin-left: 5px;
   margin-right: 10px;
-  align-items: stretch;
   gap: 5px;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: stretch;
 }
 
 /* TODO separate to 2 different name classes for about-me & work sections for better reading*/
@@ -139,10 +142,6 @@ h3 {
 
 main article p {
   text-align: justify;
-}
-
-#work {
-  display: flex;
 }
 
 .projects {
