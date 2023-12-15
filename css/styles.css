@@ -124,20 +124,18 @@ h2 {
   justify-content: flex-start;
   flex-direction: row;
   align-items: stretch;
-}
-
-#about-me {
-  margin-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 /* TODO separate to 2 different name classes for about-me & work sections for better reading*/
 /* TODO - check if I need to separate them :D */
-.main-heading-container {
+.main-heading-container,
+.footer-container {
   border-right: solid;
   border-width: 3px;
   border-color: var(--color-DUSK);
   /* TODO - research how thats work with font scaling and what is the way to handle it */
-  min-width: 60px;
+  min-width: 70px;
 }
 
 h3 {
@@ -151,21 +149,36 @@ main article p {
   text-align: justify;
 }
 
-.projects-grid-container {
-  display: grid;
-}
-
 .projects-grid-container article {
   background-color: var(--color-CYAN-OPAQUE);
-  padding: 3px;
-  margin-bottom: 10px;
+  /* padding: 3px; */
+  margin-top: 10px;
+  position: relative;
 }
 
-.projects-grid-container article img {
+.projects-grid-container img {
   width: 100%;
+  padding: 3px;
 }
 
-h4,
+.projects-grid-container hgroup {
+  background-color: var(--color-CYAN-OPAQUE);
+  width: 100px;
+  position: absolute;
+  top: 55%;
+  left: 0;
+  width: auto;
+}
+
+h4 {
+  font-weight: bolder;
+}
+
+.projects-grid-container article h4,
+h5 {
+  padding: 2px 5px 2px 5px;
+}
+
 h5,
 h6 {
   margin: 0;
