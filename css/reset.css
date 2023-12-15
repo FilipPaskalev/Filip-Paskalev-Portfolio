@@ -96,8 +96,7 @@ footer,
 header,
 hgroup,
 menu,
-nav,
-section {
+nav {
   display: block;
 }
 

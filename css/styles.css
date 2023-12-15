@@ -31,7 +31,7 @@
 /* Global styles =========================================================== */
 
 * {
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   margin: 0;
   padding: 0;
 }
@@ -110,7 +110,7 @@ aside section {
 
 h2 {
   color: var(--color-GUNMETAL);
-  font-size: 3vh;
+  font-size: 4vh;
   font-weight: bolder;
 }
 
@@ -180,13 +180,21 @@ h5 {
   padding: 2px 5px 2px 5px;
 }
 
-footer {
-  display: flexbox;
+footer section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  flex-grow: 1;
 }
 
-footer section {
-  flex-direction: column;
-  align-content: space-around;
+footer section a {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-decoration: underline 2px var(--color-DUSK);
+  color: var(--color-BLACK);
+  font-weight: 500;
+  text-underline-offset: 0.4em;
 }
 
 h6 {
