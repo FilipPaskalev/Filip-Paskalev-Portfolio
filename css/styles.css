@@ -1,6 +1,7 @@
 /* Global variables ======================================================== */
 :root {
-  /* Color palette ========================================================= */
+  /* Color palette */
+
   /* Primary */
   --color-DUSK: #445876;
   /* Secondary */
@@ -18,7 +19,8 @@
   /* Supporting */
   --color-TRANSPARENT: rgba(255, 255, 255, 0);
 
-  /* Fonts ================================================================= */
+  /* Fonts */
+
   /* Usage: text, articles */
   --font-PRIMARY: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   /* Usage: navigation, titles */
@@ -44,14 +46,6 @@ p {
   margin: 0;
 }
 
-/* Headers =================================================================*/
-h1 {
-  color: var(--color-GUNMETAL);
-  font-weight: 900;
-  font-size: x-large;
-  font-family: var(--font-PRIMARY);
-}
-
 /* Header section ==========================================================*/
 header {
   display: flex;
@@ -74,6 +68,13 @@ header section article {
   padding-right: 6px;
 }
 
+h1 {
+  color: var(--color-GUNMETAL);
+  font-weight: 900;
+  font-size: x-large;
+  font-family: var(--font-PRIMARY);
+}
+
 header nav {
   display: flex;
   flex-direction: row;
@@ -92,12 +93,58 @@ header nav a {
   font-size: 16px;
 }
 
+/* Hero section ============================================================ */
+
+aside {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  background-image: url("../UI-and-UX-design/XXS-phones/XXS-hero-placeholder-320x150.png");
+  background-repeat: no-repeat;
+  /* Used if the image is unavailable */
+  background-color: var(--color-SOFT-PEACH);
+  background-size: cover;
+}
+
+aside section {
+  height: 36px;
+  background-color: var(--color-CYAN-OPAQUE);
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  text-align: center;
+  vertical-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+aside img {
+  width: 320px;
+  height: 150px;
+}
+
+h2 {
+  color: var(--color-GUNMETAL);
+  /* font-weight: 200; */
+  font-size: x-large;
+  font-family: var(--font-PRIMARY);
+}
+
 /* Media queries =========================================================== */
 
-/* Smaller devices ========================================================= */
-@media only screen and (min-width: 320px) and (max-width: 420px) {}
+/* Smaller devices */
+@media only screen and (min-width: 320px) and (max-width: 420px) {
+  aside {
+    background-image: url("../UI-and-UX-design/XS-phones/XS-hero-placeholder-480x150.png");
+  }
 
-/* Phones ================================================================== */
+  aside img {
+    width: 420px;
+    height: 150px;
+  }
+}
+
+/* Phones */
 @media only screen and (min-width: 420px) and (max-width: 600px) {
   header {
     flex-direction: row;
@@ -112,9 +159,19 @@ header nav a {
     font-size: 14px;
     margin-left: 20px;
   }
+
+  aside {
+    background-image: url("../UI-and-UX-design/S-tablets/S-hero-placeholder-600x200.png");
+    height: 200px;
+  }
+
+  aside img {
+    width: 600px;
+    height: 200px;
+  }
 }
 
-/* Tablets and Large Phones ================================================ */
+/* Tablets and Large Phones */
 @media only screen and (min-width: 600px) and (max-width: 768px) {
   header {
     flex-direction: row;
@@ -133,9 +190,20 @@ header nav a {
     font-size: 16px;
     margin-left: 20px;
   }
+
+  aside {
+    background-image: url("../UI-and-UX-design/M-tablets/M-hero-placeholder-768x250.png");
+    height: 250px;
+  }
+
+  aside img {
+    width: 768px;
+    height: 250px;
+  }
+
 }
 
-/* Tablets ================================================================= */
+/* Tablets */
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   header {
     flex-direction: row;
@@ -154,9 +222,19 @@ header nav a {
     font-size: 18px;
     margin-left: 20px;
   }
+
+  aside {
+    background-image: url("../UI-and-UX-design/L-desktops-and-tablets/L-hero-placeholder-900x250.png");
+    height: 250px;
+  }
+
+  aside img {
+    width: 768px;
+    height: 250px;
+  }
 }
 
-/* Laptops and Desktops ==================================================== */
+/* Laptops and Desktops */
 @media only screen and (min-width: 992px) and (max-width: 1024px) {
   header {
     flex-direction: row;
@@ -175,9 +253,19 @@ header nav a {
     font-size: 18px;
     margin-left: 20px;
   }
+
+  aside {
+    background-image: url("../UI-and-UX-design/XL-desktops/XL-hero-placeholder-1024x300.png");
+    height: 300px;
+  }
+
+  aside img {
+    width: 768px;
+    height: 300px;
+  }
 }
 
-/* Laptops and Desktops ==================================================== */
+/* Monitors, Desktops */
 @media only screen and (min-width: 1024px) and (max-width: 1200px) {
   header {
     flex-direction: row;
@@ -196,9 +284,19 @@ header nav a {
     font-size: 18px;
     margin-left: 20px;
   }
+
+  aside {
+    background-image: url("../UI-and-UX-design/XXL-widescreens/XXL-hero-placeholder-1200x350.png");
+    height: 350px;
+  }
+
+  aside img {
+    width: 768px;
+    height: 350px;
+  }
 }
 
-/* Widescreens ============================================================= */
+/* Widescreens */
 @media only screen and (min-width: 1200px) {
   header {
     flex-direction: row;
@@ -216,5 +314,15 @@ header nav a {
   header nav a {
     font-size: 18px;
     margin-left: 20px;
+  }
+
+  aside {
+    background-image: url("../UI-and-UX-design/XXL-widescreens/XXL-hero-placeholder-1200x350.png");
+    height: 350px;
+  }
+
+  aside img {
+    width: 768px;
+    height: 350px;
   }
 }
