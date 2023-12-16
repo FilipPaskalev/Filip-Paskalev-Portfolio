@@ -214,32 +214,35 @@ main article p {
 /* TODO add background image with correct img */
 .project-1 {
   grid-area: mern;
+  background-image: url("../UI-and-UX-design/placeholders/projects-308x170.png");
 }
 
 /* TODO add background image with correct img */
 .project-2 {
   grid-area: led-wall;
+  background-image: url("../UI-and-UX-design/placeholders/projects-308x170.png");
 }
 
 /* TODO add background image with correct img */
 .project-3 {
   grid-area: calculator;
+  background-image: url("../UI-and-UX-design/placeholders/projects-308x170.png");
 }
 
 /* TODO add background image with correct img */
 .project-4 {
   grid-area: pastel-puzzles;
+  background-image: url("../UI-and-UX-design/placeholders/projects-308x170.png");
 }
 
 /* TODO add background image with correct img */
 .project-5 {
   grid-area: run-bunny;
+  background-image: url("../UI-and-UX-design/placeholders/projects-308x170.png");
 }
 
 /* TODO -make background image responsible */
 .projects-grid-container article {
-  /* TODO delete background image after add correct ones in projects */
-  background-image: url("../UI-and-UX-design/placeholders/projects-308x170.png");
   border: 4px solid var(--color-CYAN-OPAQUE);
   background-repeat: no-repeat;
   background-color: var(--color-CYAN-OPAQUE);
@@ -304,27 +307,27 @@ main article p {
 
   /* TODO add background image with correct img */
   .project-1 {
-    background-image: url("../UI-and-UX-design/placeholders/projects-308x170.png");
+    background-image: url("../UI-and-UX-design/placeholders/projects-325x170.png");
   }
 
   /* TODO add background image with correct img */
   .project-2 {
-    background-image: url("../UI-and-UX-design/placeholders/projects-308x170.png");
+    background-image: url("../UI-and-UX-design/placeholders/projects-325x170.png");
   }
 
   /* TODO add background image with correct img */
   .project-3 {
-    background-image: url("../UI-and-UX-design/placeholders/projects-308x170.png");
+    background-image: url("../UI-and-UX-design/placeholders/projects-325x170.png");
   }
 
   /* TODO add background image with correct img */
   .project-4 {
-    background-image: url("../UI-and-UX-design/placeholders/projects-308x170.png");
+    background-image: url("../UI-and-UX-design/placeholders/projects-325x170.png");
   }
 
   /* TODO add background image with correct img */
   .project-5 {
-    background-image: url("../UI-and-UX-design/placeholders/projects-308x170.png");
+    background-image: url("../UI-and-UX-design/placeholders/projects-325x170.png");
   }
 }
 
@@ -361,22 +364,22 @@ main article p {
 
   /* TODO add background image with correct img */
   .project-2 {
-    background-image: url("../UI-and-UX-design/placeholders/projects-308x170.png");
+    background-image: url("../UI-and-UX-design/placeholders/projects-505x170.png");
   }
 
   /* TODO add background image with correct img */
   .project-3 {
-    background-image: url("../UI-and-UX-design/placeholders/projects-308x170.png");
+    background-image: url("../UI-and-UX-design/placeholders/projects-505x170.png");
   }
 
   /* TODO add background image with correct img */
   .project-4 {
-    background-image: url("../UI-and-UX-design/placeholders/projects-308x170.png");
+    background-image: url("../UI-and-UX-design/placeholders/projects-505x170.png");
   }
 
   /* TODO add background image with correct img */
   .project-5 {
-    background-image: url("../UI-and-UX-design/placeholders/projects-308x170.png");
+    background-image: url("../UI-and-UX-design/placeholders/projects-505x170.png");
   }
 
 }
@@ -423,6 +426,50 @@ main article p {
     height: 250px;
   }
 
+  .projects-grid-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "mern mern"
+      "mern mern"
+      "mern mern"
+      "led-wall calculator"
+      "led-wall calculator"
+      "led-wall calculator"
+      "pastel-puzzles run-bunny"
+      "pastel-puzzles run-bunny"
+      "pastel-puzzles run-bunny";
+  }
+
+  /* TODO add background image with correct img */
+  .project-1 {
+    grid-area: mern;
+    background-image: url("../UI-and-UX-design/placeholders/projects-top-673x170.png");
+  }
+
+  /* TODO add background image with correct img */
+  .project-2 {
+    grid-area: led-wall;
+    background-image: url("../UI-and-UX-design/placeholders/project-332x170.png");
+  }
+
+  /* TODO add background image with correct img */
+  .project-3 {
+    grid-area: calculator;
+    background-image: url("../UI-and-UX-design/placeholders/project-332x170.png");
+  }
+
+  /* TODO add background image with correct img */
+  .project-4 {
+    grid-area: pastel-puzzles;
+    background-image: url("../UI-and-UX-design/placeholders/project-332x170.png");
+  }
+
+  /* TODO add background image with correct img */
+  .project-5 {
+    grid-area: run-bunny;
+    background-image: url("../UI-and-UX-design/placeholders/project-332x170.png");
+  }
+
 }
 
 /* Tablets */
@@ -453,6 +500,47 @@ main article p {
   aside img {
     width: 768px;
     height: 250px;
+  }
+
+  .projects-grid-container {
+    grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
+    grid-template-areas:
+      "mern mern"
+      "mern mern"
+      "mern mern"
+      "mern mern"
+      "mern mern"
+      "led-wall calculator"
+      "led-wall calculator"
+      "led-wall calculator"
+      "pastel-puzzles run-bunny"
+      "pastel-puzzles run-bunny"
+      "pastel-puzzles run-bunny";
+  }
+
+  /* TODO add background image with correct img */
+  .project-1 {
+    background-image: url("../UI-and-UX-design/placeholders/project-top-897x290.png");
+  }
+
+  /* TODO add background image with correct img */
+  .project-2 {
+    background-image: url("../UI-and-UX-design/placeholders/project-444x170.png");
+  }
+
+  /* TODO add background image with correct img */
+  .project-3 {
+    background-image: url("../UI-and-UX-design/placeholders/project-444x170.png");
+  }
+
+  /* TODO add background image with correct img */
+  .project-4 {
+    background-image: url("../UI-and-UX-design/placeholders/project-444x170.png");
+  }
+
+  /* TODO add background image with correct img */
+  .project-5 {
+    background-image: url("../UI-and-UX-design/placeholders/project-444x170.png");
   }
 }
 
@@ -485,6 +573,48 @@ main article p {
     width: 768px;
     height: 300px;
   }
+
+  .projects-grid-container {
+    grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
+    grid-template-areas:
+      "mern mern"
+      "mern mern"
+      "mern mern"
+      "mern mern"
+      "mern mern"
+      "led-wall calculator"
+      "led-wall calculator"
+      "led-wall calculator"
+      "pastel-puzzles run-bunny"
+      "pastel-puzzles run-bunny"
+      "pastel-puzzles run-bunny";
+  }
+
+  /* TODO add background image with correct img */
+  .project-1 {
+    background-image: url("../UI-and-UX-design/placeholders/projects-top-929x290.png");
+  }
+
+  /* TODO add background image with correct img */
+  .project-2 {
+    background-image: url("../UI-and-UX-design/placeholders/projects-460x170.png");
+  }
+
+  /* TODO add background image with correct img */
+  .project-3 {
+    background-image: url("../UI-and-UX-design/placeholders/projects-460x170.png");
+  }
+
+  /* TODO add background image with correct img */
+  .project-4 {
+    background-image: url("../UI-and-UX-design/placeholders/projects-460x170.png");
+  }
+
+  /* TODO add background image with correct img */
+  .project-5 {
+    background-image: url("../UI-and-UX-design/placeholders/projects-460x170.png");
+  }
+
 }
 
 /* Monitors, Desktops */
@@ -516,6 +646,50 @@ main article p {
     width: 768px;
     height: 350px;
   }
+
+  .projects-grid-container {
+    grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
+    grid-template-areas:
+      "mern mern"
+      "mern mern"
+      "mern mern"
+      "mern mern"
+      "mern mern"
+      "led-wall calculator"
+      "led-wall calculator"
+      "led-wall calculator"
+      "led-wall calculator"
+      "pastel-puzzles run-bunny"
+      "pastel-puzzles run-bunny"
+      "pastel-puzzles run-bunny"
+      "pastel-puzzles run-bunny";
+  }
+
+  /* TODO add background image with correct img */
+  .project-1 {
+    background-image: url("../UI-and-UX-design/placeholders/project-top-1105x290.png");
+  }
+
+  /* TODO add background image with correct img */
+  .project-2 {
+    background-image: url("../UI-and-UX-design/placeholders/projects-548x230.png");
+  }
+
+  /* TODO add background image with correct img */
+  .project-3 {
+    background-image: url("../UI-and-UX-design/placeholders/projects-548x230.png");
+  }
+
+  /* TODO add background image with correct img */
+  .project-4 {
+    background-image: url("../UI-and-UX-design/placeholders/projects-548x230.png");
+  }
+
+  /* TODO add background image with correct img */
+  .project-5 {
+    background-image: url("../UI-and-UX-design/placeholders/projects-548x230.png");
+  }
+
 }
 
 /* Widescreens */
@@ -547,4 +721,48 @@ main article p {
     width: 768px;
     height: 350px;
   }
+
+  .projects-grid-container {
+    grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
+    grid-template-areas:
+      "mern mern"
+      "mern mern"
+      "mern mern"
+      "mern mern"
+      "mern mern"
+      "led-wall calculator"
+      "led-wall calculator"
+      "led-wall calculator"
+      "led-wall calculator"
+      "pastel-puzzles run-bunny"
+      "pastel-puzzles run-bunny"
+      "pastel-puzzles run-bunny"
+      "pastel-puzzles run-bunny";
+  }
+
+  /* TODO add background image with correct img */
+  .project-1 {
+    background-image: url("../UI-and-UX-design/placeholders/project-top-1105x290.png");
+  }
+
+  /* TODO add background image with correct img */
+  .project-2 {
+    background-image: url("../UI-and-UX-design/placeholders/projects-548x230.png");
+  }
+
+  /* TODO add background image with correct img */
+  .project-3 {
+    background-image: url("../UI-and-UX-design/placeholders/projects-548x230.png");
+  }
+
+  /* TODO add background image with correct img */
+  .project-4 {
+    background-image: url("../UI-and-UX-design/placeholders/projects-548x230.png");
+  }
+
+  /* TODO add background image with correct img */
+  .project-5 {
+    background-image: url("../UI-and-UX-design/placeholders/projects-548x230.png");
+  }
+
 }
