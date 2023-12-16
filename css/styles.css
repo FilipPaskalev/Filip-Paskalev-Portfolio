@@ -1,8 +1,6 @@
 /* Global variables ======================================================== */
-
 :root {
   /* Color palette ========================================================= */
-
   /* Primary */
   --color-DUSK: #445876;
   /* Secondary */
@@ -21,7 +19,6 @@
   --color-TRANSPARENT: rgba(255, 255, 255, 0);
 
   /* Fonts ================================================================= */
-
   /* Usage: text, articles */
   --font-PRIMARY: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   /* Usage: navigation, titles */
@@ -29,9 +26,8 @@
 }
 
 /* Global styles =========================================================== */
-
 * {
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -49,262 +45,65 @@ p {
 }
 
 /* Headers =================================================================*/
-
 h1 {
   color: var(--color-GUNMETAL);
-  font-size: 5vh;
-  font-weight: bolder;
+  font-weight: 900;
+  font-size: x-large;
+  font-family: var(--font-PRIMARY);
 }
 
-h2 {
-  color: var(--color-GUNMETAL);
-  font-size: 22px;
-  font-weight: bolder;
-}
-
-h4 {
-  font-weight: bolder;
-}
-
-h4,
-h5 {
-  padding: 2px 5px 2px 5px;
-}
-
-h6 {
-  margin: 0;
-}
-
+/* Header section ==========================================================*/
 header {
-  font-family: var(--font-SECONDARY);
-  color: var(--color-CYAN-OPAQUE);
   display: flex;
   flex-direction: column;
+  align-items: stretch;
   background-color: var(--color-GUNMETAL);
 }
 
 header section {
-  background-color: var(--color-CYAN-OPAQUE);
-  height: 50px;
   width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 10px;
+  padding-top: 2px;
+  height: 46px;
+  background-color: red;
+}
+
+header section article {
+  background-color: var(--color-CYAN-OPAQUE);
+  height: 38px;
+  width: 150px;
+  text-align: right;
+  padding-right: 6px;
 }
 
 header nav {
-  background-color: var(--color-GUNMETAL);
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   height: 40px;
-  align-items: center;
+  width: 100%;
 }
 
-/* TODO - how to make text-underline slightly wider than text IDEA: span wrapper with bottom box border*/
 header nav a {
+  color: var(--color-CYAN-OPAQUE);
+  background-color: var(--color-GUNMETAL);
+  font-family: var(--font-PRIMARY);
+  align-self: center;
   text-decoration: underline 2px;
   text-underline-offset: 5px;
-  background-color: var(--color-GUNMETAL);
-  color: var(--color-CYAN-OPAQUE);
 }
 
-header nav a:active {
-  background-color: var(--color-GUNMETAL);
-  color: var(--color-CYAN-OPAQUE);
-}
+/* Media queries =========================================================== */
 
-header nav a:hover {
-  color: var(--color-WHITE);
-  cursor: pointer;
-}
+/* Smaller devices ========================================================= */
+@media only screen and (min-width: 320px) and (max-width: 420px) {}
 
+/* Phones ================================================================== */
+@media only screen and (min-width: 420px) and (max-width: 600px) {}
 
+/* @media (max-width: 768px) {} */
 
-aside {
-  position: relative;
-}
+/* @media (max-width: 900px) {} */
 
-aside img {
-  width: 100%;
-}
+/* @media (max-width: 1024px) {} */
 
-aside section {
-  background-color: var(--color-CYAN-OPAQUE);
-  position: absolute;
-  top: 75%;
-  right: 20px;
-  text-align: center;
-  padding: 5px 10px 5px 10px;
-}
-
-#about-me,
-#work,
-#contact-me {
-  display: flex;
-  margin-left: 5px;
-  margin-right: 10px;
-  gap: 5px;
-  justify-content: flex-start;
-  flex-direction: row;
-  align-items: stretch;
-  padding-bottom: 10px;
-}
-
-/* TODO separate to 2 different name classes for about-me & work sections for better reading*/
-/* TODO - check if I need to separate them :D */
-.main-heading-container,
-.footer-container {
-  border-right: solid;
-  border-width: 3px;
-  border-color: var(--color-DUSK);
-  /* TODO - research how thats work with font scaling and what is the way to handle it */
-  min-width: 70px;
-}
-
-h3 {
-  color: var(--color-DUSK);
-  font-weight: bolder;
-  margin-right: 5px;
-  text-align: right;
-}
-
-main article p {
-  text-align: justify;
-}
-
-.projects-grid-container article {
-  background-color: var(--color-CYAN-OPAQUE);
-  padding: 3px;
-  margin-top: 10px;
-  position: relative;
-  min-height: 150px;
-}
-
-.projects-grid-container img {
-  width: 100%;
-  min-height: 150px;
-}
-
-.projects-grid-container hgroup {
-  background-color: var(--color-CYAN-OPAQUE);
-  min-width: 120px;
-  position: absolute;
-  /* top: 55%; */
-  bottom: 20px;
-  left: 3px;
-  width: auto;
-}
-
-footer section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  flex-grow: 1;
-}
-
-footer section a {
-  margin-top: 5px;
-  margin-bottom: 5px;
-  text-decoration: underline 2px var(--color-DUSK);
-  color: var(--color-BLACK);
-  font-weight: 500;
-  text-underline-offset: 6px;
-}
-
-/* Media queries ===========================================================*/
-
-/* TODO - check if something needs to be change between 320 and 480 */
-/* @media screen and (max-width: 320px) {} */
-
-@media screen and (min-width: 480px) {
-
-  header {
-    flex-direction: row;
-  }
-
-  header section {
-    width: 200px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-  }
-
-  header nav {
-    display: flex;
-    flex-direction: row;
-    flex-grow: 1;
-    align-self: center;
-    justify-content: flex-end;
-    padding-right: 10px;
-  }
-
-  header nav a {
-    padding-right: 10px;
-    padding-left: 10px;
-  }
-
-  aside {
-    height: 250px;
-    margin-bottom: 10px;
-  }
-
-  aside img {
-    height: 250px;
-  }
-
-  .projects-grid-container hgroup {
-    min-width: 140px;
-    bottom: 30px;
-  }
-
-  footer section {
-    flex-direction: row;
-  }
-
-}
-
-@media screen and (min-width: 600px) {
-  .projects-grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 2fr 1fr 1fr;
-    grid-auto-columns: 1fr;
-    gap: 10px 10px;
-    grid-auto-flow: row dense;
-    grid-template-areas:
-      "mern-project mern-project"
-      "led-wall-project calculator-project"
-      "pastel-puzzlez-project run-bunny-project";
-  }
-
-  .mern-project {
-    justify-self: stretch;
-    align-self: stretch;
-    grid-area: mern-project;
-  }
-
-  .led-wall-project {
-    grid-area: led-wall-project;
-  }
-
-  .calculator-project {
-    grid-area: calculator-project;
-  }
-
-  .pastel-puzzlez-project {
-    grid-area: pastel-puzzlez-project;
-  }
-
-  .run-bunny-project {
-    grid-area: run-bunny-project;
-  }
-
-}
-
-@media screen and (max-width: 768px) {}
-
-@media screen and (max-width: 900px) {}
-
-@media screen and (max-width: 1024px) {}
-
-@media screen and (max-width: 1200px) {}
+/* @media (max-width: 1200px) {} */
