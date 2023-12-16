@@ -262,6 +262,25 @@ main article p {
   font-family: var(--font-PRIMARY);
 }
 
+footer section a {
+  color: var(--color-BLACK);
+  /* background-color: var(--color-GUNMETAL); */
+  font-family: var(--font-PRIMARY);
+  align-self: center;
+  text-decoration: underline 2px var(--color-DUSK);
+  text-underline-offset: 5px;
+  font-size: 16px;
+
+}
+
+footer section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 40px;
+  width: 100%;
+}
+
 /* Smaller devices */
 @media only screen and (min-width: 321px) and (max-width: 420px) {
 
@@ -397,6 +416,7 @@ main article p {
 
   .projects-grid-container {
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px 50px;
     grid-template-areas:
       "mern mern"
       "mern mern"
