@@ -214,6 +214,7 @@ footer section a {
 
 /* Media queries ===========================================================*/
 
+/* TODO - check if something needs to be change between 320 and 480 */
 /* @media screen and (max-width: 320px) {} */
 
 @media screen and (min-width: 480px) {
@@ -260,7 +261,11 @@ footer section a {
   }
 }
 
-@media screen and (max-width: 600px) {}
+@media screen and (max-width: 600px) {
+  .projects-grid-container {
+    display: grid;
+  }
+}
 
 @media screen and (max-width: 768px) {}
 
