@@ -57,7 +57,6 @@ header {
 header section {
   padding-top: 2px;
   height: 46px;
-  background-color: red;
 }
 
 header section article {
@@ -172,13 +171,6 @@ main article p {
   padding-left: 5px;
 }
 
-
-
-
-
-
-
-
 /* Grid for projects ======================================================= */
 
 .projects-grid-container {
@@ -269,29 +261,6 @@ main article p {
   /* font-size: small; */
   font-family: var(--font-PRIMARY);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-/* 320px — 480px: Mobile devices
-481px — 768px: iPads, Tablets
-769px — 1024px: Small screens, laptops
-1025px — 1200px: Desktops, large screens
-1201px and more —  Extra large screens, TV */
-/* Media queries =========================================================== */
-
-
-
-
-
 
 /* Smaller devices */
 @media only screen and (min-width: 321px) and (max-width: 420px) {
@@ -493,7 +462,7 @@ main article p {
   }
 
   aside {
-    background-image: url("../UI-and-UX-design/L-desktops-and-tablets/L-hero-placeholder-900x250.png");
+    background-image: url("../UI-and-UX-design/placeholders/hero-992x250.png");
     height: 250px;
   }
 
