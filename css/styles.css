@@ -218,6 +218,7 @@ footer section a {
 /* @media screen and (max-width: 320px) {} */
 
 @media screen and (min-width: 480px) {
+
   header {
     flex-direction: row;
   }
@@ -259,12 +260,45 @@ footer section a {
   footer section {
     flex-direction: row;
   }
+
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 600px) {
   .projects-grid-container {
     display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: row dense;
+    grid-template-areas:
+      "mern-project mern-project"
+      "led-wall-project calculator-project"
+      "pastel-puzzlez-project run-bunny-project";
   }
+
+  .mern-project {
+    justify-self: stretch;
+    align-self: stretch;
+    grid-area: mern-project;
+  }
+
+  .led-wall-project {
+    grid-area: led-wall-project;
+  }
+
+  .calculator-project {
+    grid-area: calculator-project;
+  }
+
+  .pastel-puzzlez-project {
+    grid-area: pastel-puzzlez-project;
+  }
+
+  .run-bunny-project {
+    grid-area: run-bunny-project;
+  }
+
 }
 
 @media screen and (max-width: 768px) {}
