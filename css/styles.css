@@ -285,8 +285,14 @@ main article p {
 1201px and more —  Extra large screens, TV */
 /* Media queries =========================================================== */
 
+
+
+
+
+
 /* Smaller devices */
 @media only screen and (min-width: 321px) and (max-width: 420px) {
+
   aside {
     background-image: url("../UI-and-UX-design/XS-phones/XS-hero-placeholder-480x150.png");
   }
@@ -346,6 +352,44 @@ main article p {
   aside img {
     width: 600px;
     height: 200px;
+  }
+
+  /* TODO add background image with correct img */
+  .project-1 {
+    background-image: url("../UI-and-UX-design/placeholders/projects-505x170.png");
+  }
+
+  /* TODO add background image with correct img */
+  .project-2 {
+    background-image: url("../UI-and-UX-design/placeholders/projects-308x170.png");
+  }
+
+  /* TODO add background image with correct img */
+  .project-3 {
+    background-image: url("../UI-and-UX-design/placeholders/projects-308x170.png");
+  }
+
+  /* TODO add background image with correct img */
+  .project-4 {
+    background-image: url("../UI-and-UX-design/placeholders/projects-308x170.png");
+  }
+
+  /* TODO add background image with correct img */
+  .project-5 {
+    background-image: url("../UI-and-UX-design/placeholders/projects-308x170.png");
+  }
+
+}
+
+/* Supporting media to handle font */
+@media only screen and (min-width: 421px) and (max-width: 464px) {
+  header nav {
+    justify-content: flex-end;
+    margin-right: 10px;
+  }
+
+  header nav a {
+    margin-left: 10px;
   }
 }
 
