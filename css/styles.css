@@ -652,29 +652,24 @@ footer section a {
       "pastel-puzzles run-bunny";
   }
 
-  /* TODO add background image with correct img */
   .mern-project {
-    background-image: url("../UI-and-UX-design/placeholders/project-top-1105x290.png");
+    background-image: url("../images/mern/mern-1105x290.jpg");
   }
 
-  /* TODO add background image with correct img */
   .led-wall-project {
-    background-image: url("../UI-and-UX-design/placeholders/projects-548x230.png");
+    background-image: url("../images/led-wall/led-wall-548x230.jpg");
   }
 
-  /* TODO add background image with correct img */
   .calculator-project {
-    background-image: url("../UI-and-UX-design/placeholders/projects-548x230.png");
+    background-image: url("../images/calculator/548x230.jpg");
   }
 
-  /* TODO add background image with correct img */
   .pastel-puzzles-project {
-    background-image: url("../UI-and-UX-design/placeholders/projects-548x230.png");
+    background-image: url("../images/pastel-puzzles/548x230.jpg");
   }
 
-  /* TODO add background image with correct img */
   .run-bunny-project {
-    background-image: url("../UI-and-UX-design/placeholders/projects-548x230.png");
+    background-image: url("../images/run-bunny/548x230.jpg");
   }
 
   footer section {
