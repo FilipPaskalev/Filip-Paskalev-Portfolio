@@ -496,7 +496,8 @@ footer section a {
 
   .projects-grid-container {
     grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
-    grid-template-areas: "mern mern"
+    grid-template-areas:
+      "mern mern"
       "mern mern"
       "mern mern"
       "mern mern"
@@ -509,29 +510,24 @@ footer section a {
       "pastel-puzzles run-bunny";
   }
 
-  /* TODO add background image with correct img */
   .mern-project {
-    background-image: url("../UI-and-UX-design/placeholders/project-top-897x290.png");
+    background-image: url("../images/mern/mern-897x290.jpg");
   }
 
-  /* TODO add background image with correct img */
   .led-wall-project {
-    background-image: url("../UI-and-UX-design/placeholders/project-444x170.png");
+    background-image: url("../images/led-wall/led-wall-444x170.jpg");
   }
 
-  /* TODO add background image with correct img */
   .calculator-project {
-    background-image: url("../UI-and-UX-design/placeholders/project-444x170.png");
+    background-image: url("../images/calculator/calculator-444x170.jpg");
   }
 
-  /* TODO add background image with correct img */
   .pastel-puzzles-project {
-    background-image: url("../UI-and-UX-design/placeholders/project-444x170.png");
+    background-image: url("../images/pastel-puzzles/pastel-puzzles-444x170.jpg");
   }
 
-  /* TODO add background image with correct img */
   .run-bunny-project {
-    background-image: url("../UI-and-UX-design/placeholders/project-444x170.png");
+    background-image: url("../images/run-bunny/run-bunny-444x170.jpg");
   }
 
   footer section {
