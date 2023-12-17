@@ -291,7 +291,7 @@ footer section a {
 @media only screen and (min-width: 321px) and (max-width: 420px) {
 
   aside {
-    background-image: url("../UI-and-UX-design/XS-phones/XS-hero-placeholder-480x150.png");
+    background-image: url("../images/hero/hero-420x150.jpg");
   }
 
   aside img {
@@ -299,29 +299,24 @@ footer section a {
     height: 150px;
   }
 
-  /* TODO add background image with correct img */
   .mern-project {
-    background-image: url("../UI-and-UX-design/placeholders/projects-325x170.png");
+    background-image: url("../images/mern/mern-325x170.jpg");
   }
 
-  /* TODO add background image with correct img */
   .project-2 {
-    background-image: url("../UI-and-UX-design/placeholders/projects-325x170.png");
+    background-image: url("../images/led-wall/led-wall-325x170.jpg");
   }
 
-  /* TODO add background image with correct img */
   .project-3 {
-    background-image: url("../UI-and-UX-design/placeholders/projects-325x170.png");
+    background-image: url("../images/calculator/calculator-325x170.jpg");
   }
 
-  /* TODO add background image with correct img */
   .project-4 {
-    background-image: url("../UI-and-UX-design/placeholders/projects-325x170.png");
+    background-image: url("../images/pastel-puzzles/pastel-puzzles-325x170.jpg");
   }
 
-  /* TODO add background image with correct img */
   .project-5 {
-    background-image: url("../UI-and-UX-design/placeholders/projects-325x170.png");
+    background-image: url("../images/run-bunny/run-bunny-325-170.jpg");
   }
 }
 
