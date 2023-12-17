@@ -285,7 +285,7 @@ footer section a {
   text-underline-offset: 6px;
 }
 
-
+/* Media queries =========================================================== */
 
 /* Smaller devices */
 @media only screen and (min-width: 321px) and (max-width: 420px) {
@@ -358,19 +358,20 @@ footer section a {
     background-image: url("../images/calculator/calculator-505x170.jpg");
   }
 
-  /* TODO add background image with correct img */
   .pastel-puzzles-project {
     background-image: url("../images/pastel-puzzles/pastel-puzzles-505x170.jpg");
   }
 
-  /* TODO add background image with correct img */
   .run-bunny-project {
     background-image: url("../images/run-bunny/run-bunny-505x170.jpg");
   }
 
+  footer section {
+    flex-direction: row;
+  }
 }
 
-/* Supporting media to handle font */
+/* Supporting media to handle font in header nav */
 @media only screen and (min-width: 421px) and (max-width: 464px) {
   header nav {
     justify-content: flex-end;
@@ -379,6 +380,15 @@ footer section a {
 
   header nav a {
     margin-left: 10px;
+  }
+}
+
+/* Supporting media to handle footer flex direction */
+@media only screen and (min-width: 421px) and (max-width: 550px) {
+
+  /* TODO - make info in the footer appear in two columns and two rows */
+  footer section {
+    flex-direction: column;
   }
 }
 
