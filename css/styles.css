@@ -221,12 +221,12 @@ main article p {
   background-image: url("../images/led-wall/led-wall-225x170.jpg");
 }
 
-.project-3 {
+.calculator-project {
   grid-area: calculator;
   background-image: url("../images/calculator/calculator-225x170.jpg");
 }
 
-.project-4 {
+.pastel-puzzles-project {
   grid-area: pastel-puzzles;
   background-image: url("../images//pastel-puzzles/pastel-puzzles-225x170.jpg");
 }
@@ -307,11 +307,11 @@ footer section a {
     background-image: url("../images/led-wall/led-wall-325x170.jpg");
   }
 
-  .project-3 {
+  .calculator-project {
     background-image: url("../images/calculator/calculator-325x170.jpg");
   }
 
-  .project-4 {
+  .pastel-puzzles-project {
     background-image: url("../images/pastel-puzzles/pastel-puzzles-325x170.jpg");
   }
 
@@ -357,12 +357,12 @@ footer section a {
   }
 
   /* TODO add background image with correct img */
-  .project-3 {
+  .calculator-project {
     background-image: url("../UI-and-UX-design/placeholders/projects-505x170.png");
   }
 
   /* TODO add background image with correct img */
-  .project-4 {
+  .pastel-puzzles-project {
     background-image: url("../UI-and-UX-design/placeholders/projects-505x170.png");
   }
 
@@ -440,13 +440,13 @@ footer section a {
   }
 
   /* TODO add background image with correct img */
-  .project-3 {
+  .calculator-project {
     grid-area: calculator;
     background-image: url("../UI-and-UX-design/placeholders/project-332x170.png");
   }
 
   /* TODO add background image with correct img */
-  .project-4 {
+  .pastel-puzzles-project {
     grid-area: pastel-puzzles;
     background-image: url("../UI-and-UX-design/placeholders/project-332x170.png");
   }
@@ -514,12 +514,12 @@ footer section a {
   }
 
   /* TODO add background image with correct img */
-  .project-3 {
+  .calculator-project {
     background-image: url("../UI-and-UX-design/placeholders/project-444x170.png");
   }
 
   /* TODO add background image with correct img */
-  .project-4 {
+  .pastel-puzzles-project {
     background-image: url("../UI-and-UX-design/placeholders/project-444x170.png");
   }
 
@@ -585,12 +585,12 @@ footer section a {
   }
 
   /* TODO add background image with correct img */
-  .project-3 {
+  .calculator-project {
     background-image: url("../UI-and-UX-design/placeholders/projects-460x170.png");
   }
 
   /* TODO add background image with correct img */
-  .project-4 {
+  .pastel-puzzles-project {
     background-image: url("../UI-and-UX-design/placeholders/projects-460x170.png");
   }
 
@@ -659,12 +659,12 @@ footer section a {
   }
 
   /* TODO add background image with correct img */
-  .project-3 {
+  .calculator-project {
     background-image: url("../UI-and-UX-design/placeholders/projects-548x230.png");
   }
 
   /* TODO add background image with correct img */
-  .project-4 {
+  .pastel-puzzles-project {
     background-image: url("../UI-and-UX-design/placeholders/projects-548x230.png");
   }
 
@@ -733,12 +733,12 @@ footer section a {
   }
 
   /* TODO add background image with correct img */
-  .project-3 {
+  .calculator-project {
     background-image: url("../UI-and-UX-design/placeholders/projects-548x230.png");
   }
 
   /* TODO add background image with correct img */
-  .project-4 {
+  .pastel-puzzles-project {
     background-image: url("../UI-and-UX-design/placeholders/projects-548x230.png");
   }
 
