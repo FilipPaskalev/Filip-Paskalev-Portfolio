@@ -203,37 +203,31 @@ main article p {
     "run-bunny";
 }
 
-/* TODO add background image with correct img */
 .project-1 {
   grid-area: mern;
-  background-image: url("../UI-and-UX-design/placeholders/projects-308x170.png");
+  background-image: url("../images/mern/mern-225x170.jpg");
 }
 
-/* TODO add background image with correct img */
 .project-2 {
   grid-area: led-wall;
-  background-image: url("../images/led-wall/225x158.jpg");
+  background-image: url("../images/led-wall/led-wall-225x170.jpg");
 }
 
-/* TODO add background image with correct img */
 .project-3 {
   grid-area: calculator;
-  background-image: url("../UI-and-UX-design/placeholders/projects-308x170.png");
+  background-image: url("../images/calculator/calculator-225x170.jpg");
 }
 
-/* TODO add background image with correct img */
 .project-4 {
   grid-area: pastel-puzzles;
-  background-image: url("../UI-and-UX-design/placeholders/projects-308x170.png");
+  background-image: url("../images//pastel-puzzles/pastel-puzzles-225x170.jpg");
 }
 
-/* TODO add background image with correct img */
 .project-5 {
   grid-area: run-bunny;
-  background-image: url("../UI-and-UX-design/placeholders/projects-308x170.png");
+  background-image: url("../images/run-bunny/run-bunny-225x170.jpg");
 }
 
-/* TODO - make background image responsible */
 .projects-grid-container article {
   border: 4px solid var(--color-CYAN-OPAQUE);
   background-repeat: no-repeat;
@@ -261,6 +255,8 @@ main article p {
   /* font-size: small; */
   font-family: var(--font-PRIMARY);
 }
+
+/* Footer ================================================================== */
 
 footer section a {
   color: var(--color-BLACK);
@@ -417,8 +413,7 @@ footer section {
   .projects-grid-container {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px 50px;
-    grid-template-areas:
-      "mern mern"
+    grid-template-areas: "mern mern"
       "mern mern"
       "mern mern"
       "led-wall calculator"
@@ -493,8 +488,7 @@ footer section {
 
   .projects-grid-container {
     grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
-    grid-template-areas:
-      "mern mern"
+    grid-template-areas: "mern mern"
       "mern mern"
       "mern mern"
       "mern mern"
@@ -565,8 +559,7 @@ footer section {
 
   .projects-grid-container {
     grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
-    grid-template-areas:
-      "mern mern"
+    grid-template-areas: "mern mern"
       "mern mern"
       "mern mern"
       "mern mern"
@@ -638,8 +631,7 @@ footer section {
 
   .projects-grid-container {
     grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
-    grid-template-areas:
-      "mern mern"
+    grid-template-areas: "mern mern"
       "mern mern"
       "mern mern"
       "mern mern"
@@ -713,8 +705,7 @@ footer section {
 
   .projects-grid-container {
     grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
-    grid-template-areas:
-      "mern mern"
+    grid-template-areas: "mern mern"
       "mern mern"
       "mern mern"
       "mern mern"
