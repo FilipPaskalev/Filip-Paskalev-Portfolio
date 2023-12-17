@@ -533,6 +533,10 @@ footer section a {
   .run-bunny-project {
     background-image: url("../UI-and-UX-design/placeholders/project-444x170.png");
   }
+
+  footer section {
+    flex-direction: row;
+  }
 }
 
 /* Laptops and Desktops */
@@ -605,6 +609,9 @@ footer section a {
     background-image: url("../UI-and-UX-design/placeholders/projects-460x170.png");
   }
 
+  footer section {
+    flex-direction: row;
+  }
 }
 
 /* Monitors, Desktops */
@@ -679,6 +686,10 @@ footer section a {
     background-image: url("../UI-and-UX-design/placeholders/projects-548x230.png");
   }
 
+  footer section {
+    flex-direction: row;
+  }
+
 }
 
 /* Widescreens */
@@ -751,6 +762,10 @@ footer section a {
   /* TODO add background image with correct img */
   .run-bunny-project {
     background-image: url("../UI-and-UX-design/placeholders/projects-548x230.png");
+  }
+
+  footer section {
+    flex-direction: row;
   }
 
 }
