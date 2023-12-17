@@ -90,6 +90,7 @@ header nav a {
   text-decoration: underline 2px;
   text-underline-offset: 5px;
   font-size: 16px;
+  font-weight: 500;
 }
 
 /* Hero section ============================================================ */
