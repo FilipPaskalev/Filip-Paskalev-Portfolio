@@ -208,7 +208,7 @@ main article p {
     "run-bunny";
 }
 
-.project-1 {
+.mern-project {
   grid-area: mern;
   background-image: url("../images/mern/mern-225x170.jpg");
 }
@@ -263,24 +263,25 @@ main article p {
 
 /* Footer ================================================================== */
 
-footer section a {
-  color: var(--color-BLACK);
-  /* background-color: var(--color-GUNMETAL); */
-  font-family: var(--font-PRIMARY);
-  align-self: center;
-  text-decoration: underline 2px var(--color-DUSK);
-  text-underline-offset: 5px;
-  font-size: 16px;
-
-}
-
 footer section {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
   justify-content: space-around;
-  height: 40px;
-  width: 100%;
+  flex-grow: 1;
+  gap: 10px;
 }
+
+footer section a {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-decoration: underline 2px var(--color-DUSK);
+  color: var(--color-BLACK);
+  font-weight: 500;
+  text-underline-offset: 6px;
+}
+
+
 
 /* Smaller devices */
 @media only screen and (min-width: 321px) and (max-width: 420px) {
@@ -295,7 +296,7 @@ footer section {
   }
 
   /* TODO add background image with correct img */
-  .project-1 {
+  .mern-project {
     background-image: url("../UI-and-UX-design/placeholders/projects-325x170.png");
   }
 
@@ -347,7 +348,7 @@ footer section {
   }
 
   /* TODO add background image with correct img */
-  .project-1 {
+  .mern-project {
     background-image: url("../UI-and-UX-design/placeholders/projects-505x170.png");
   }
 
@@ -430,8 +431,7 @@ footer section {
   }
 
   /* TODO add background image with correct img */
-  .project-1 {
-    grid-area: mern;
+  .mern-project {
     background-image: url("../UI-and-UX-design/placeholders/projects-top-673x170.png");
   }
 
@@ -507,7 +507,7 @@ footer section {
   }
 
   /* TODO add background image with correct img */
-  .project-1 {
+  .mern-project {
     background-image: url("../UI-and-UX-design/placeholders/project-top-897x290.png");
   }
 
@@ -578,7 +578,7 @@ footer section {
   }
 
   /* TODO add background image with correct img */
-  .project-1 {
+  .mern-project {
     background-image: url("../UI-and-UX-design/placeholders/projects-top-929x290.png");
   }
 
@@ -652,7 +652,7 @@ footer section {
   }
 
   /* TODO add background image with correct img */
-  .project-1 {
+  .mern-project {
     background-image: url("../UI-and-UX-design/placeholders/project-top-1105x290.png");
   }
 
@@ -726,7 +726,7 @@ footer section {
   }
 
   /* TODO add background image with correct img */
-  .project-1 {
+  .mern-project {
     background-image: url("../UI-and-UX-design/placeholders/project-top-1105x290.png");
   }
 
