@@ -556,7 +556,7 @@ footer section a {
   }
 
   aside {
-    background-image: url("../UI-and-UX-design/XL-desktops/XL-hero-placeholder-1024x300.png");
+    background-image: url("../images/hero/hero-992x250.jpg");
     height: 300px;
   }
 
@@ -580,29 +580,24 @@ footer section a {
       "pastel-puzzles run-bunny";
   }
 
-  /* TODO add background image with correct img */
   .mern-project {
-    background-image: url("../UI-and-UX-design/placeholders/projects-top-929x290.png");
+    background-image: url("../images/mern/mern-929x290.jpg");
   }
 
-  /* TODO add background image with correct img */
   .led-wall-project {
-    background-image: url("../UI-and-UX-design/placeholders/projects-460x170.png");
+    background-image: url("../images/led-wall/led-wall-505x170.jpg");
   }
 
-  /* TODO add background image with correct img */
   .calculator-project {
-    background-image: url("../UI-and-UX-design/placeholders/projects-460x170.png");
+    background-image: url("../images/calculator/calculator-505x170.jpg");
   }
 
-  /* TODO add background image with correct img */
   .pastel-puzzles-project {
-    background-image: url("../UI-and-UX-design/placeholders/projects-460x170.png");
+    background-image: url("../images/pastel-puzzles/pastel-puzzles-505x170.jpg");
   }
 
-  /* TODO add background image with correct img */
   .run-bunny-project {
-    background-image: url("../UI-and-UX-design/placeholders/projects-460x170.png");
+    background-image: url("../images/run-bunny/run-bunny-505x170.jpg");
   }
 
   footer section {
