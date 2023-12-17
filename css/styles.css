@@ -161,7 +161,7 @@ h3 {
   border-right: solid;
   border-width: 3px;
   border-color: var(--color-DUSK);
-  /* TODO - research how thats work with font scaling and what is the way to handle it */
+  /* TODO - research how that is work with font scaling and what is the way to handle it */
   min-width: 70px;
 }
 
@@ -171,13 +171,18 @@ main article p {
   padding-left: 5px;
 }
 
-/* Grid for projects ======================================================= */
+/* Grid for projects (up to 320px width) =================================== */
 
 .projects-grid-container {
   display: grid;
   grid-auto-flow: row dense;
   grid-auto-columns: 1fr;
   grid-template-columns: 1fr;
+  /* 
+  Reason of rows to be in smaller inner rows is to be easier to implement 
+  future changes (more flexibility) 
+  Example: if more projects needs to be added 
+  */
   grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
   gap: 10px 10px;
   justify-content: center;
