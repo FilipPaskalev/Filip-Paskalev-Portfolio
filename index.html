@@ -27,37 +27,33 @@
     <!-- ================ Header section ================ -->
     <header>
       <section>
-        <!-- TODO - change article with proper tag -->
         <article>
           <h1><b>Portfolio</b></h1>
         </article>
       </section>
       <nav>
-        <a href="#about-me" hreflang="en">About me</a>
-        <a href="#work" hreflang="en">Work</a>
-        <a href="#contact-me" hreflang="en">Contact Me</a>
-        <a href="#" hreflang="en">Resume</a>
+        <a href="#about-me" hreflang="en"><span>About me</span></a>
+        <a href="#work" hreflang="en"><span>Work</span></a>
+        <a href="#contact-me" hreflang="en"><span>Contact Me</span></a>
+        <a href="#" hreflang="en"><span>Resume</span></a>
       </nav>
     </header>
     <!-- ================ Hero section ================ -->
     <aside>
+      <img src="./imgs/hero-1800x250.jpg"
+        alt="White background. white keyboard on the left side and a pen next to the keyboard." />
       <section>
         <h2>
-          <b>Check my projects !</b>
+          <b>Web developer</b>
         </h2>
       </section>
     </aside>
-    <!-- ================ Main section ================ -->
     <main>
       <!-- ================ About me section ================ -->
       <section id="about-me">
-        <span class="about-me-heading-container">
-          <h3>
-            <b>
-              About<br>Me
-            </b>
-          </h3>
-        </span>
+        <hgroup>
+          <h3>About Me</h3>
+        </hgroup>
         <article>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fermentum felis sit amet felis sodales
             accumsan. Curabitur luctus ipsum quam, eu bibendum metus aliquet id. Morbi dignissim ultricies ligula eget
@@ -83,29 +79,27 @@
       </section>
       <!-- ================ Work section ================ -->
       <section id="work">
-        <span class="work-heading-container">
-          <b>
-            <h3>Work</h3>
-          </b>
-        </span>
-        <section class="projects-grid-container">
-          <article class="mern-project">
+        <hgroup class="work-header">
+          <h3>Work</h3>
+        </hgroup>
+        <section class="projects-grid">
+          <article class="black-jack">
             <hgroup>
               <h4>
-                <b>MERN Stack</b>
+                <b>BlackJack</b>
               </h4>
-              <h5>MERN Stack</h5>
+              <h5>JavaScript</h5>
             </hgroup>
           </article>
-          <article class="led-wall-project">
+          <article class="password-generator">
             <hgroup>
               <h4>
-                <b>LED Wall</b>
+                <b>Password generator</b>
               </h4>
-              <h5>NODE/IoT</h5>
+              <h5>JavaScript/HTML/CSS</h5>
             </hgroup>
           </article>
-          <article class="calculator-project">
+          <article class="calculator">
             <hgroup>
               <h4>
                 <b>Calculator</b>
@@ -113,7 +107,7 @@
               <h5>React/JavaScript/CSS</h5>
             </hgroup>
           </article>
-          <article class="pastel-puzzles-project">
+          <article class="pastel-puzzles">
             <hgroup>
               <h4>
                 <b>Pastel Puzzels</b>
@@ -121,7 +115,7 @@
               <h5>MERN Stack</h5>
             </hgroup>
           </article>
-          <article class="run-bunny-project">
+          <article class="run-bunny">
             <hgroup>
               <h4>
                 <b>Run Buddy</b>
@@ -134,19 +128,25 @@
     </main>
     <!-- ================ Fotter section ================ -->
     <footer id="contact-me">
-      <span class="footer-container">
-        <h3>
-          <b>Contact<br>Me</b>
-        </h3>
-      </span>
+      <hgroup>
+        <h3>Contact Me</h3>
+      </hgroup>
       <section>
-        <!-- TODO - add icons before links and order them in left -->
-        <a href="tel:+4733378901" hreflang="en" title="Get in touch by phone">+447882146424</a>
-        <a href="mailto:paskalevfilip@gmail.com" hreflang="en" title="Send me email"
-          target="_blank">paskalevfilip@gmail.com</a>
-        <a href="https://github.com/FilipPaskalev" hreflang="en" title="Visit my GitHub page">GitHub</a>
-        <a href="https://www.linkedin.com/in/paskalevfilip/" hreflang="en"
-          title="Visit my LinkedIn profile">LinkedIn</a>
+        <span>
+          <a href="tel:+4733378901" hreflang="en" title="Get in touch by phone">+447882146424</a>
+        </span>
+        <span>
+          <a href="mailto:paskalevfilip@gmail.com" hreflang="en" title="Send me email"
+            target="_blank">paskalevfilip@gmail.com</a>
+        </span>
+        </a>
+        <span>
+          <a href="https://github.com/FilipPaskalev" hreflang="en" title="Visit my GitHub profile">GitHub</a>
+        </span>
+        <span>
+          <a href="https://www.linkedin.com/in/paskalevfilip/" hreflang="en"
+            title="Visit my LinkedIn profile">LinkedIn</a>
+        </span>
       </section>
     </footer>
   </body>
