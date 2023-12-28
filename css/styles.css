@@ -187,12 +187,7 @@ aside section {
 }
 
 /* Work ==================================================================== */
-/* TODO refactor to access by element not by class*/
-.black-jack,
-.password-generator,
-.calculator,
-.guess-the-word,
-.tic-tac-toe {
+#work section article {
   margin: 0 0 10px 20px;
   min-height: 150px;
   border: 4px var(--color-CYAN-OPAQUE) solid;
@@ -201,11 +196,7 @@ aside section {
   background-size: cover;
 }
 
-.black-jack:hover,
-.password-generator:hover,
-.calculator:hover,
-.guess-the-word:hover,
-.tic-tac-toe:hover {
+#work section article:hover {
   cursor: pointer;
   filter: brightness(80%);
 }
@@ -214,7 +205,6 @@ aside section {
   grid-area: black-jack;
   background-image: var(--blackjack-file-path);
 }
-
 
 .password-generator {
   grid-area: password-generator;
@@ -299,11 +289,7 @@ footer section a:hover {
       "guess-the-word tic-tac-toe";
   }
 
-  .black-jack,
-  .password-generator,
-  .calculator,
-  .guess-the-word,
-  .tic-tac-toe {
+  #work section article {
     margin-bottom: 0px;
   }
 }
