@@ -175,9 +175,6 @@ aside section {
   height: 40px;
 }
 
-/* Main ==================================================================== */
-
-
 /* About me ================================================================ */
 #about-me article p {
   text-align: justify;
@@ -216,27 +213,27 @@ aside section {
 
 .black-jack {
   grid-area: black-jack;
-  background-image: url("../assets/backgrounds/work-section/blackjack/1800x250-1.jpg");
+  background-image: url("../imgs/blackjack-1800x250.jpg");
 }
 
 .password-generator {
   grid-area: password-generator;
-  background-image: url("../assets/backgrounds/work-section/password-generator/1800x250.jpg");
+  background-image: url("../imgs/password-generator-1800x250.jpg");
 }
 
 .calculator {
   grid-area: calculator;
-  background-image: url("../assets/backgrounds/work-section/calculator/1800x250.jpg");
+  background-image: url("../imgs/calculator-1800x250.jpg");
 }
 
-.pastel-puzzles {
+.guess-the-word {
   grid-area: pastel-puzzles;
-  background-image: url("../assets/backgrounds/work-section/guess-the-word/1800x250.jpg");
+  background-image: url("../imgs/guess-the-word-1800x250.jpg");
 }
 
-.run-bunny {
+.tic-tac-toe {
   grid-area: run-bunny;
-  background-image: url("../assets/backgrounds/work-section/tic-tac-toe-game/1800x250.jpg");
+  background-image: url("../imgs/tic-tac-toe-1800x250.jpg");
 }
 
 #work article hgroup {
