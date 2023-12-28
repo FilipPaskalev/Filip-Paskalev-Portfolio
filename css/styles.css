@@ -27,7 +27,13 @@
   /* Usage: navigation, titles */
   --font-SECONDARY: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
-  /* Sizes */
+  /* Images paths*/
+  --blackjack-file-path: url("../img/blackjack-1800x250.jpg");
+  --password-generator-file-path: url("../img/password-generator-1800x250.jpg");
+  --calculator-file-path: url("../img/calculator-1800x250.jpg");
+  --guess-the-word-file-path: url("../img/guess-the-word-1800x250.jpg");
+  --tic-tac-toe-file-path: url("../img/tic-tac-toe-1800x250.jpg");
+
 }
 
 /* Global styles =========================================================== */
@@ -206,27 +212,28 @@ aside section {
 
 .black-jack {
   grid-area: black-jack;
-  background-image: url("../img/blackjack-1800x250.jpg");
+  background-image: var(--blackjack-file-path);
 }
+
 
 .password-generator {
   grid-area: password-generator;
-  background-image: url("../img/password-generator-1800x250.jpg");
+  background-image: var(--password-generator-file-path);
 }
 
 .calculator {
   grid-area: calculator;
-  background-image: url("../img/calculator-1800x250.jpg");
+  background-image: var(--calculator-file-path);
 }
 
 .guess-the-word {
   grid-area: guess-the-word;
-  background-image: url("../img/guess-the-word-1800x250.jpg");
+  background-image: var(--guess-the-word-file-path);
 }
 
 .tic-tac-toe {
   grid-area: tic-tac-toe;
-  background-image: url("../img/tic-tac-toe-1800x250.jpg");
+  background-image: var(--tic-tac-toe-file-path);
 }
 
 #work article hgroup {
