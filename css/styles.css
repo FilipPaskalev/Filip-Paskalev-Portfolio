@@ -185,55 +185,48 @@ aside section {
 .black-jack,
 .password-generator,
 .calculator,
-.pastel-puzzles,
-.run-bunny {
+.guess-the-word,
+.tic-tac-toe {
   margin: 0 0 10px 20px;
   min-height: 150px;
   border: 4px var(--color-CYAN-OPAQUE) solid;
   background-color: var(--color-SOFT-PEACH);
   position: relative;
+  background-size: cover;
 }
 
 .black-jack:hover,
 .password-generator:hover,
 .calculator:hover,
-.pastel-puzzles:hover,
-.run-bunny:hover {
+.guess-the-word:hover,
+.tic-tac-toe:hover {
   cursor: pointer;
   filter: brightness(80%);
 }
 
-.black-jack,
-.password-generator,
-.calculator,
-.pastel-puzzles,
-.run-bunny {
-  background-size: cover;
-}
-
 .black-jack {
   grid-area: black-jack;
-  background-image: url("../imgs/blackjack-1800x250.jpg");
+  background-image: url("../img/blackjack-1800x250.jpg");
 }
 
 .password-generator {
   grid-area: password-generator;
-  background-image: url("../imgs/password-generator-1800x250.jpg");
+  background-image: url("../img/password-generator-1800x250.jpg");
 }
 
 .calculator {
   grid-area: calculator;
-  background-image: url("../imgs/calculator-1800x250.jpg");
+  background-image: url("../img/calculator-1800x250.jpg");
 }
 
 .guess-the-word {
-  grid-area: pastel-puzzles;
-  background-image: url("../imgs/guess-the-word-1800x250.jpg");
+  grid-area: guess-the-word;
+  background-image: url("../img/guess-the-word-1800x250.jpg");
 }
 
 .tic-tac-toe {
-  grid-area: run-bunny;
-  background-image: url("../imgs/tic-tac-toe-1800x250.jpg");
+  grid-area: tic-tac-toe;
+  background-image: url("../img/tic-tac-toe-1800x250.jpg");
 }
 
 #work article hgroup {
@@ -296,14 +289,14 @@ footer section a:hover {
       "black-jack black-jack"
       "black-jack black-jack"
       "password-generator calculator"
-      "pastel-puzzles run-bunny";
+      "guess-the-word tic-tac-toe";
   }
 
   .black-jack,
   .password-generator,
   .calculator,
-  .pastel-puzzles,
-  .run-bunny {
+  .guess-the-word,
+  .tic-tac-toe {
     margin-bottom: 0px;
   }
 }
