@@ -194,7 +194,6 @@ aside section {
 
 /* Work ==================================================================== */
 #work section article {
-  margin: 0 0 10px 20px;
   min-height: 150px;
   border: 4px var(--color-CYAN-OPAQUE) solid;
   background-color: var(--color-SOFT-PEACH);
@@ -298,6 +297,7 @@ footer section a:hover {
   #work section article {
     margin-bottom: 0px;
   }
+
 }
 
 /* Laptops */
@@ -308,7 +308,6 @@ footer section a:hover {
     padding-left: 20px;
   }
 
-  /* TODO refactor by elements access not by # */
   #about-me hgroup,
   #work>hgroup,
   #contact-me hgroup {
@@ -334,6 +333,7 @@ footer section a:hover {
   .projects-grid {
     display: grid;
     width: 100%;
+    margin-left: 20px;
   }
 
   #contact-me section {
@@ -343,6 +343,11 @@ footer section a:hover {
     width: 100%;
   }
 
+  #about-me hgroup,
+  #work>hgroup,
+  #contact-me hgroup {
+    min-width: 120px;
+  }
 }
 
 /* Desktops */

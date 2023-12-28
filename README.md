@@ -9,6 +9,7 @@ The repository contains an assignment (to build a portfolio according to set par
   - [Description](#description)
     - [Research](#research)
       - [Media queries researched resources](#media-queries-researched-resources)
+      - [Fonts](#fonts)
   - [Usage](#usage)
     - [User story](#user-story)
   - [Project tasks](#project-tasks)
@@ -50,6 +51,9 @@ The repository contains an assignment (to build a portfolio according to set par
 [Mdn web docs - CSS properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)
 
 [......](https://css-tricks.com/a-complete-guide-to-custom-properties/#h-naming-custom-properties)
+
+#### Fonts
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_fonts/Variable_fonts_guide
 
 ## Usage
 
